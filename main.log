@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.4.25)  3 MAY 2020 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.4.25)  5 MAY 2020 18:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -735,7 +735,7 @@ Package minitoc(hints) Warning: W0023
 
 pdfTeX warning: pdflatex.exe (file ./PDFs/Cover.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<PDFs/Cover.pdf, id=50, 597.23125pt x 845.1575pt>
+<PDFs/Cover.pdf, id=89, 597.23125pt x 845.1575pt>
 File: PDFs/Cover.pdf Graphic file (type pdf)
 <use PDFs/Cover.pdf>
 Package pdftex.def Info: PDFs/Cover.pdf  used on input line 8.
@@ -756,7 +756,7 @@ version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./PDFs/Cover.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<PDFs/Cover.pdf, id=53, page=1, 597.23125pt x 845.1575pt>
+<PDFs/Cover.pdf, id=92, page=1, 597.23125pt x 845.1575pt>
 File: PDFs/Cover.pdf Graphic file (type pdf)
 <use PDFs/Cover.pdf, page 1>
 Package pdftex.def Info: PDFs/Cover.pdf , page1 used on input line 8.
@@ -794,6 +794,10 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc3.
 \openout3 = `main.mtc3'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc4.
+\openout3 = `main.mtc4'.
+
  (./main.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
@@ -819,14 +823,13 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- (./main.lof)
+ (./main.lof [1
+
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- (./main.equ
-[1
-
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+ (./main.equ)
 \tf@equ=\write7
 \openout7 = `main.equ'.
 
@@ -840,7 +843,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<Images/vlc_ZnQlUU16ty.png, id=102, 542.77782pt x 245.41687pt>
+<Images/vlc_ZnQlUU16ty.png, id=186, 542.77782pt x 245.41687pt>
 File: Images/vlc_ZnQlUU16ty.png Graphic file (type png)
 <use Images/vlc_ZnQlUU16ty.png>
 Package pdftex.def Info: Images/vlc_ZnQlUU16ty.png  used on input line 20.
@@ -856,7 +859,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
-<Images/vlc_EyL6r2HUlJ.png, id=104, 627.09282pt x 404.26031pt>
+<Images/vlc_EyL6r2HUlJ.png, id=188, 627.09282pt x 404.26031pt>
 File: Images/vlc_EyL6r2HUlJ.png Graphic file (type png)
 <use Images/vlc_EyL6r2HUlJ.png>
 Package pdftex.def Info: Images/vlc_EyL6r2HUlJ.png  used on input line 29.
@@ -880,7 +883,7 @@ l.34 \section{Chapter 1.2 - What is deep learning}
 
 
  <./Images/vlc_ZnQlUU16ty.png>]
-<Images/vlc_7mdff7jBZY.png, id=113, 581.92406pt x 446.41782pt>
+<Images/vlc_7mdff7jBZY.png, id=197, 581.92406pt x 446.41782pt>
 File: Images/vlc_7mdff7jBZY.png Graphic file (type png)
 <use Images/vlc_7mdff7jBZY.png>
 Package pdftex.def Info: Images/vlc_7mdff7jBZY.png  used on input line 43.
@@ -897,7 +900,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--44
  []
 
 [2 <./Images/vlc_EyL6r2HUlJ.png>]
-<Images/vlc_YAS4jaJ0JB.png, id=120, 663.22781pt x 469.00218pt>
+<Images/vlc_YAS4jaJ0JB.png, id=204, 663.22781pt x 469.00218pt>
 File: Images/vlc_YAS4jaJ0JB.png Graphic file (type png)
 <use Images/vlc_YAS4jaJ0JB.png>
 Package pdftex.def Info: Images/vlc_YAS4jaJ0JB.png  used on input line 54.
@@ -960,7 +963,7 @@ LaTeX Font Info:    Trying to load font information for U+dsrom on input line 6
 (c:/texlive/2020/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-<Images/vlc_uBIEApi83B.png, id=136, 675.27281pt x 421.575pt>
+<Images/vlc_uBIEApi83B.png, id=220, 675.27281pt x 421.575pt>
 File: Images/vlc_uBIEApi83B.png Graphic file (type png)
 <use Images/vlc_uBIEApi83B.png>
 Package pdftex.def Info: Images/vlc_uBIEApi83B.png  used on input line 73.
@@ -971,17 +974,262 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 73.
 See the caption package documentation for explanation.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--92
+
+ []
+
+[5 <./Images/vlc_uBIEApi83B.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 93--105
+
+ []
+
+<Images/vlc_5dSX2DXM5y.png, id=228, 306.39468pt x 204.01219pt>
+File: Images/vlc_5dSX2DXM5y.png Graphic file (type png)
+<use Images/vlc_5dSX2DXM5y.png>
+Package pdftex.def Info: Images/vlc_5dSX2DXM5y.png  used on input line 112.
+(pdftex.def)             Requested size: 367.6858pt x 231.84787pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 112.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--113
+
+ []
+
+<Images/vlc_9TMrsGBi0o.png, id=229, 402.75468pt x 176.91093pt>
+File: Images/vlc_9TMrsGBi0o.png Graphic file (type png)
+<use Images/vlc_9TMrsGBi0o.png>
+Package pdftex.def Info: Images/vlc_9TMrsGBi0o.png  used on input line 127.
+(pdftex.def)             Requested size: 367.66269pt x 231.83868pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 127.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--128
+
+ []
+
+[6 <./Images/vlc_5dSX2DXM5y.png>]
+<Images/vlc_aB15OK4H2t.png, id=236, 683.55376pt x 389.95688pt>
+File: Images/vlc_aB15OK4H2t.png Graphic file (type png)
+<use Images/vlc_aB15OK4H2t.png>
+Package pdftex.def Info: Images/vlc_aB15OK4H2t.png  used on input line 153.
+(pdftex.def)             Requested size: 367.67416pt x 231.83383pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 153.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--154
+
+ []
+
+[7 <./Images/vlc_9TMrsGBi0o.png>]
+<Images/vlc_oQFy31Qrgm.png, id=242, 573.64313pt x 413.29407pt>
+File: Images/vlc_oQFy31Qrgm.png Graphic file (type png)
+<use Images/vlc_oQFy31Qrgm.png>
+Package pdftex.def Info: Images/vlc_oQFy31Qrgm.png  used on input line 190.
+(pdftex.def)             Requested size: 367.67303pt x 231.8404pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 190.
+See the caption package documentation for explanation.
+
+<Images/vlc_yZiUr02XFG.png, id=243, 666.99188pt x 353.06906pt>
+File: Images/vlc_yZiUr02XFG.png Graphic file (type png)
+<use Images/vlc_yZiUr02XFG.png>
+Package pdftex.def Info: Images/vlc_yZiUr02XFG.png  used on input line 191.
+(pdftex.def)             Requested size: 367.67104pt x 231.83568pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 191.
+See the caption package documentation for explanation.
+
+<Images/vlc_noaWeuo6ii.png, id=244, 712.91344pt x 399.74344pt>
+File: Images/vlc_noaWeuo6ii.png Graphic file (type png)
+<use Images/vlc_noaWeuo6ii.png>
+Package pdftex.def Info: Images/vlc_noaWeuo6ii.png  used on input line 193.
+(pdftex.def)             Requested size: 367.66035pt x 231.83914pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 193.
+See the caption package documentation for explanation.
+
+<Images/vlc_jGHgEfwvB6.png, id=245, 522.45187pt x 204.01219pt>
+File: Images/vlc_jGHgEfwvB6.png Graphic file (type png)
+<use Images/vlc_jGHgEfwvB6.png>
+Package pdftex.def Info: Images/vlc_jGHgEfwvB6.png  used on input line 194.
+(pdftex.def)             Requested size: 367.66695pt x 231.84787pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 194.
+See the caption package documentation for explanation.
+
+<Images/vlc_y3WEcY54hI.png, id=246, 728.7225pt x 516.42938pt>
+File: Images/vlc_y3WEcY54hI.png Graphic file (type png)
+<use Images/vlc_y3WEcY54hI.png>
+Package pdftex.def Info: Images/vlc_y3WEcY54hI.png  used on input line 195.
+(pdftex.def)             Requested size: 367.66281pt x 231.83159pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 195.
+See the caption package documentation for explanation.
+
+<Images/vlc_cdtgmn3NAF.png, id=247, 727.96968pt x 514.17094pt>
+File: Images/vlc_cdtgmn3NAF.png Graphic file (type png)
+<use Images/vlc_cdtgmn3NAF.png>
+Package pdftex.def Info: Images/vlc_cdtgmn3NAF.png  used on input line 197.
+(pdftex.def)             Requested size: 367.67177pt x 231.83768pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 197.
+See the caption package documentation for explanation.
+
+<Images/vlc_7J4xeI8M2g.png, id=248, 736.25063pt x 520.94624pt>
+File: Images/vlc_7J4xeI8M2g.png Graphic file (type png)
+<use Images/vlc_7J4xeI8M2g.png>
+Package pdftex.def Info: Images/vlc_7J4xeI8M2g.png  used on input line 198.
+(pdftex.def)             Requested size: 367.67503pt x 231.83228pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 198.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+[8 <./Images/vlc_aB15OK4H2t.png>] [9 <./Images/vlc_oQFy31Qrgm.png> <./Images/vl
+c_yZiUr02XFG.png>] [10 <./Images/vlc_noaWeuo6ii.png> <./Images/vlc_jGHgEfwvB6.p
+ng> <./Images/vlc_y3WEcY54hI.png>] [11 <./Images/vlc_cdtgmn3NAF.png> <./Images/
+vlc_7J4xeI8M2g.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 209.
+
+<Images/vlc_9n6oQpeN9Q.png, id=275, 725.71124pt x 517.935pt>
+File: Images/vlc_9n6oQpeN9Q.png Graphic file (type png)
+<use Images/vlc_9n6oQpeN9Q.png>
+Package pdftex.def Info: Images/vlc_9n6oQpeN9Q.png  used on input line 210.
+(pdftex.def)             Requested size: 367.67168pt x 231.83571pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 210.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+<Images/vlc_AU8hElxhfe.png, id=276, 728.7225pt x 514.17094pt>
+File: Images/vlc_AU8hElxhfe.png Graphic file (type png)
+<use Images/vlc_AU8hElxhfe.png>
+Package pdftex.def Info: Images/vlc_AU8hElxhfe.png  used on input line 212.
+(pdftex.def)             Requested size: 367.66281pt x 231.83768pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 212.
+See the caption package documentation for explanation.
+
+<Images/vlc_sWrXTyRkHo.png, id=277, 657.95813pt x 456.20438pt>
+File: Images/vlc_sWrXTyRkHo.png Graphic file (type png)
+<use Images/vlc_sWrXTyRkHo.png>
+Package pdftex.def Info: Images/vlc_sWrXTyRkHo.png  used on input line 214.
+(pdftex.def)             Requested size: 367.67094pt x 231.83276pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 214.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--221
+
+ []
+
+[12 <./Images/vlc_9n6oQpeN9Q.png> <./Images/vlc_AU8hElxhfe.png>]
+<Images/vlc_0aZPmMALw3.png, id=284, 808.52063pt x 576.65437pt>
+File: Images/vlc_0aZPmMALw3.png Graphic file (type png)
+<use Images/vlc_0aZPmMALw3.png>
+Package pdftex.def Info: Images/vlc_0aZPmMALw3.png  used on input line 225.
+(pdftex.def)             Requested size: 367.66774pt x 231.83673pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 225.
+See the caption package documentation for explanation.
+
+<Images/vlc_doexEBUTyy.png, id=285, 781.41937pt x 557.83406pt>
+File: Images/vlc_doexEBUTyy.png Graphic file (type png)
+<use Images/vlc_doexEBUTyy.png>
+Package pdftex.def Info: Images/vlc_doexEBUTyy.png  used on input line 226.
+(pdftex.def)             Requested size: 367.66063pt x 231.83728pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 226.
+See the caption package documentation for explanation.
+
 )
-Underfull \hbox (badness 10000) in paragraph at lines 67--21
+Underfull \hbox (badness 10000) in paragraph at lines 222--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--21
+Underfull \hbox (badness 10000) in paragraph at lines 222--21
 
  []
 
-[5 <./Images/vlc_uBIEApi83B.png>] [6]
+[13 <./Images/vlc_sWrXTyRkHo.png> <./Images/vlc_0aZPmMALw3.png>] [14 <./Images/
+vlc_doexEBUTyy.png>]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
@@ -1004,36 +1252,41 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 288A175563F55E2B45831C94F9DD2CA8;857.
+(rerunfilecheck)             Checksum: 4EAC2343CA4364AF150987E8A58830BE;1747.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14573 strings out of 480607
- 212748 string characters out of 5907502
- 530170 words of memory out of 5000000
- 29940 multiletter control sequences out of 15000+600000
- 559806 words of font info for 73 fonts, out of 8000000 for 9000
+ 14760 strings out of 480607
+ 216592 string characters out of 5907502
+ 536170 words of memory out of 5000000
+ 30078 multiletter control sequences out of 15000+600000
+ 563094 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,18n,49p,839b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fon
-ts/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2020/texmf-dist/fonts/type
-1/urw/times/utmb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 791307 bytes).
+pdfTeX warning (dest): name{figure.4.6} has been referenced but does not exis
+t, replaced by a fixed one
+
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mib10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/doub
+lestroke/dsrom12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/202
+0/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (17 pages, 3268040 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

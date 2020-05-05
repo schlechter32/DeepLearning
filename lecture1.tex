@@ -88,4 +88,139 @@ ln(P(\underline{x }) = sum_ { i = 1 } ^c x_i \cdot ln(p_i) = [x_i, ..., x_c ] \c
     ... \\
     ln(P_c)
 \end{array}  \right] = \underline{x }^T \cdot ln(\underline{P) } $  \\
-ln function applied element wise \\
+ln function applied element wise
+\section{Chapter 3.3 - Multiple random vectors}
+\textbullet 3-16 Table for distributions \\
+\textbullet product rule for probability
+$p(\underline{x } , \underline{ y } ) = p(\underline{x }) \cdot p( \underline{y }) \\$
+\textbullet Bayes rule
+$ p( \underline{y } | \underline{x } ) = p( \underline{y } | \underline{x } ) \cdot ) \frac{ p(\underline{x }}{ p(\underline{y }}$ \\
+\textbullet Independent and identically distributed \\
+$ \underline{x} $ and $ \underline{y}$ are independent if: \\
+$p (\underline{x}, \underline{y}) = p (\underline{x}) \cdot p(\underline{y}) \leftrightarrow p(\underline{x}| \underline{y}) $ or $ p(\underline{x} | \underline{y}) = p ( \underline{y})$ \\
+$ \underline{x}_1 ,... ,\underline{x}_N$ are independent and identically distributed (i.i.d)\\
+$P(\underline{x}_1, ..., \underline{x}_N) = \prod_ {i = 1 }^{N } p_i (\underline{x}_i), \underline{X}_i \sim p_i (\underline{x}_i) \\
+p_i (\underline{x}_i ) = p(\underline{x}_i) $
+$\rightarrow$  $p(\underline{x}_1 , ..., \underline{x}_N) = \prod_{ i=1 } ^{N } p(\underline{x}_i)$ \\
+\subsection{ Chapter 3.2.3 - Kernel basaed density estimation }
+PDF: $ p(\underline{x}) $ of $ \underline{X} \in \R^d $ unknown , only i.i.d samples $ \underline{x}(n), 1 \leq n \leq N$ \\
+kernel-based estimate $ \hat { p } (\underline{x}) of p(\underline{x})$ from $ \underline{x}(n)$ \\
+kernel function $ k(\underline{x})$, like a PDF \\
+1. $ k(\underline{x}) \geq 0 \forall \underline{x}$ \\
+2. $\int k(\underline{x}) d \underline{x} = 1$ \\
+$ \hat { p } (\underline{x}) = \frac{1}{N} \sum_ {n=1 } ^N k (\underline{x} - \underline{x} (n)) $ \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_5dSX2DXM5y}{Kernel function}{fig3_5} \\
+
+\textbf{ Smooth Gaussian Kernel: } \\
+$N(\underline{ 0 } , \underline{\underline{I } }) : k(\underline{x}) = \frac{1}{2 \pi ^{ \frac{d}{2}} }  \cdot e ^{ - \frac{1}{2} || \underline{x} ||^2 }$ \\
+\textbf{ Dirac Kernel } \\
+$ k (\underline{x}) = \delta (\underline{x}) : \text { Dirac function } \\
+ \delta(\underline{x}) =  \left\lbrace
+\begin{array}{l}
+    \infty , \underline{x} = \underline{0 } \\
+    0, \underline{x} \neq \underline{0}
+\end{array} \right.  \\
+ \int \delta  (\underline{x}) d \underline{x} = 1  \\
+\text { sampling property } :  \int \delta (\underline{x} - \underline{x} _0 f(\underline{x}) d \underline{x}) = f (\underline{x}_0)$  \\
+\textbf{  empirical distribution  } \\
+$ \hat { p }(\underline{x}) \cdot   \ \frac{1}{N} \sum _ {n=1 } ^{N } \delta (\underline{x} - \underline{x} (n)) $ \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_9TMrsGBi0o}{Estimated PDF function}{fig3_6}
+\section{Chapter 3.4 Kullback-Leibler divergence and cross entropy }
+Dissimilarity measure between 2 distributions: \\
+\textbf{Case A: continuous-valued random variables: PDF } \\
+$\underline{X} \sim p(\underline{x}): $ true statistical distribution of $ \underline{X} \\
+$\qquad $q(\underline{x}) $: approximation for $ p(\underline{x}) $, e.g. by DNN$ \\ $
+\textbf{ KL divergence (KLD) between p and q:} \\
+$D _{KL } ( p || q) = \int  p(\underline{x}) \cdot ln (\frac{p(\underline{x})}{q(\underline{x})}) d \underline{x} \\
+= E_ {\underline{X} \sim p } [ln (\frac{p(\underline{X})}{q(\underline{X})})] $ \\
+expectation over $p(\underline{x})$ \\
+DKL is real valued scalar positive or negative or 0 \\
+\textbf{ Case B: discrete-valued random vector: PMF } \\
+$ \underline{X} \in \lbrace \underline{x}_1, ... \underline{x}_c \rbrace \sim $: true PMF of $ \underline{X} \sim Q(\underline{x}) $: approximation for $ P(\underline{x}) \\
+D _ {KL } (P|| Q) = \sum _ {i=1  }^ {c} P(\underline{x}_i) \cdot ln (\frac{P(\underline{x})} {Q(\underline{x})}) =
+E_{\underline{X} \sim P }  [ ln (\frac{P(\underline{x})}{Q(\underline{x})})] \\
+$
+Properties of the KL divergence:
+P1) Nonnegative $ D _ {KL } (P||Q) \geq 0 \forall p,q \\$
+P2) Eguality $ D _ {KL } (P||Q) = 0 $ iff(if and only if) $p(\underline{x}) = q(\underline{x}) \\
+$ proof for "sufficient" : $ ln (\frac{p(\underline{x} )}{q (\underline{x})}) = 0 \forall \underline{x} \\
+$P1 and P2$ : D_ {KL } (p || 1) $ is a suitable metric for approximation p by q $ \\
+$P3 Asymmetry \\
+$ D _ {KL } (p||q) = E _ { \underline{X } \sim p} = ln (\frac{p(\underline{x})}{q (\underline{x})}) \neq
+D _ {KL } (q||p) = E _ { \underline{X } \sim q} = ln (\frac{q(\underline{x})}{p (\underline{x})}) \\
+ $ forward KLD \qquad \qquad \qquad \qquad backward KLD \\
+$D _ {KL }$ is not a true distance measure with $D(\underline{x}, \underline{y}) = D(\underline{y}, \underline{x})$ \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_aB15OK4H2t}{Forward vs. Backward KL divergence}{fig3_7}
+\subsection{E3.5 KLD between normal and Laplace distribution }
+
+$ p(x) = \sim N(0, \sigma^2), p(x) = \frac{1}{\sqrt{2 \pi} \sigma} \cdot   e ^ {-\frac{x^2}{2 \sigma^2} } \\
+q(x) \sim $ Laplace: $ (0,b) q(x) = \frac{1}{2b} e^{- \frac{|x|}{b}}\\ $
+Task: choose b to best approximate p by q. \\
+$
+\frac{p(x)}{q(x)} = \sqrt{\frac{2}{\pi}} \cdot \frac{b}{\sigma} cdot exp( - \frac{x^2}{2 \sigma^2} + \frac{|x|}{b}) \\
+D _ {KL } (p ||q) = E _ { \underline{X } \ sim p} = ln (\frac{p(\underline{x})}{q (\underline{x})}) = ln (\sqrt{\frac{2}{\pi}} \cdot \frac{b}{\sigma}) + E _ {X \sim p } ( ( - \frac{x^2}{2 \sigma^2} + \frac{|x|}{b})) \\
+E _ { \underline{X } \ sim p} = \sigma^2 \\
+E _ { \underline{X } \ sim p} ( |x|) = \int _ {- \infty } ^{\infty } |x| \cdot \frac{1}{\sqrt{2 \pi} \sigma} exp (- \frac{x^2}{2 \sigma^2}) dx = 2 \int _ {0 } ^{\infty } | \cdot \frac{1}{\sqrt{2 \pi} \sigma} exp (- \frac{x^2}{2 \sigma^2}) dx = \sqrt { \frac{2}{\pi} } \cdot \sigma  \\
+$
+Let $ \alpha = \frac{\sigma}{b}, D _ {KL } (p ||q) = ...= \sqrt{\frac{2}{\pi}} \cdot  \alpha - ln ( \alpha )+ ln(\sqrt{\frac{2}{\pi}}) - \frac{1}{2}$
+$ \frac{d D _ {KL } (p || q)}{d \alpha} = \sqrt{\frac{2}{\pi}} - \frac{1}{\alpha} = 0 \rightarrow \alpha = \sqrt{\frac{2}{\pi}}, $ i.e. $ b \approx 0,86 \\
+D _ {KL , min} (p ||q ) = D _ {KL } (p || q ) | \alpha = \sqrt{\frac{2}{\pi}} = .. = \frac{1}{2 } - ln (\frac{\pi}{2}) \approx 0,048 \\
+$
+\textbullet Probable exam question calculate this for 2 distributions \\
+P4) Additive : \\
+$
+\underline{X} )= (\underline{x}_1, \underline{x}_2), \underline{x}_1 $ and $ \underline{x}_2 $ are independent, $ i.e. \\
+p(\underline{x}) ? p_1 (\underline{x}_1) \cdot p_2 (\underline{x}_2),
+q(\underline{x}) ? q_1 (\underline{x}_1) \cdot q_2 (\underline{x}_2) \\
+$
+Then: $ D _ {KL } (p || q) = D _ {KL } (p_1 || q_1)  + D _ {KL } (p_2 || q_2)$ \\
+P5) Relation to cross entropy : \\
+Definiton of entropy 3-24
+probability always greater than 0 but smaller than 1 \\
+$
+D _ {KL } (p || q) = \int p ln(\frac{p}{q}) d \underline{x} = \int p ln(p) dx - \int p ln(q) dx = - H(p) + H(p,q)  $ or \\
+cross entropy: $ H(p,q) = D _ {KL } (p || q) + H(p) \geq H(p) \geq 0$ \\
+For a given (fixed) $p(\underline{x}) : H(p)$ fixed \\
+\textbf{Hence: } min $D _ {KL } (p || q) \leftrightarrow min H(p,q)$ \\
+Not the case for backward KLD $D _ {KL } (q || p)$! \\
+Minimizing is not the same anymore because then it is $H(q)$ and thats what we are trying to optimize
+\section{Chapter 3.5 Probabilistic framework }
+valid for both SP and ML \\
+valid for both regression problem and classicication problem \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_oQFy31Qrgm}{Probabilistic framework of supervised learning}{fig3_8} \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_yZiUr02XFG}{The data generating distribution}{fig3_9} \\
+Bayes Rule: \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_noaWeuo6ii}{Bayes Rule in DL}{fig3_10} \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_jGHgEfwvB6}{Bayes decision theorem}{fig3_11} \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_y3WEcY54hI}{Supervised learning}{fig3_12} \\
+\textbf{Learning Criterion: } \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_cdtgmn3NAF}{Calc part1}{fig3_13} \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_7J4xeI8M2g}{Calc part2}{fig3_14} \\
+\subsection{Role of a NN }
+
+1. approximate true posterior $p(\underline{y} | \underline{x}) $ by $ q (\underline{y} | \underline{x} ; \Theta)$ \\
+2. learn $\underline{ \Theta }$ from $D_ {train }$
+\mainsection{4}{Dense Neural Networks }{05/05/2020}
+A general model for $ q (\underline{y} | \underline{x} ; \Theta ) \\
+$
+*) can learn any linear or nonlinear mapping  \\
+*) suitable for both regression and classification problems \\
+artificial NN: mimic biological NN (brain)
+\subsection{4.1 Fully connected neural networks - Neuron}
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_9n6oQpeN9Q}{Neuron}{fig4_1}
+\subsection{Chapter 4.2 Layer of Nurons}
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_AU8hElxhfe}{Layer of Neurons}{fig4_2}\\
+2 meanings of $\phi ()$: \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_sWrXTyRkHo}{Meanings of phi}{fig4_3} \\
+Comments : \\
+\textbullet no interconnections between neurons in the same layer \\
+\textbullet dense layer, fully connected layer:
+\qquad \textbullet each input $ x_j$ connected to each neuron $i$ \\
+$\rightarrow$ $c \cdot d$ weights and $w_ {ij }$ an c biases $b_i$ , $1 \leq i \leq c, 1 \leq j \leq d$, \\
+$\rightarrow$ $ c \cdot (d+1)$ parameters
+\section{4.3 Feedforward neural network}
+A cascade of dense layers \\
+\textbf{Layer } $ 1 \leq l \leq L:$ \\
+$M_l -1 $ number of the input neurons \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_0aZPmMALw3}{Feedforward multilayer neural network}{fig4_4} \\
+\putfigure{1.0}{0.7}{0.3}{Images/vlc_doexEBUTyy}{Network Parameters}{fig4_5} 
