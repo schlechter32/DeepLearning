@@ -60,4 +60,69 @@ $ \phi (a) = tanh(a) = \dfrac{e^{a} -e^{-a}  }{e^{a}  + e^{-a} }    $ \\
   \end{array} \right. $
   \textbullet 4-9 for details on usage \\
   \section{Chapter 4.5 Universal approximation } 
-  
+\includegraphics[width=\linewidth]{Images/Slide410.png}
+
+\subsection{E4.3 Regression with 1 hidden layer}
+True function: $ f_0(x)   $\\
+Given: $ x(n)  $ and noisy function $ y(n) = f_(x(n)) + z(n) , 1 \leq n \leq N  ,z(n)$ is the noise \\
+NN: \\
+\includegraphics[width=\linewidth]{Images/E43Architecture.png}\\
+i.e. $  x_2 = f(x, \underline{\theta}) = \underline{w}_2^T \sigma ( \underline{w}_1 x + \underline{b}_1 )  $, column times row times scalar \\
+$ = \sum_{i=1}^{N_1} w_{2,i} \cdot \underbrace{\sigma ( w_{1,i} x + b_{1,i}) }_{M_1 \text{ nonllinear basis functions of }x} + b_2$ \\
+$ \sigma ( w_i x + b_i ) \sigma (w_i ( x + \dfrac{b_i}{w_i})) $ \\
+new center at $ \dfrac{-b_i}{w_i} $ and new slope value $ w_i $ \\
+Picture is for black 1 $ w_i $ red another $ w_i $ green another example $ w_i $\\
+\includegraphics[width=\linewidth]{Images/E43Sketchsigmoid.png}
+\section{Chapter 4.4 - 4.6 Loss and cost function}
+\textbf{Review chapter 3.4}	\\
+\includegraphics[width=\linewidth]{Images/ProbabalisticFrameworkSupervisedLearning.png}\\
+$ \underset{\underline{\theta}}{min}  L ( \underline{\theta  }) =  \dfrac{1}{N} = \sum_{n=1}^{N} (l(\underline{x}(n), y(n)_i \underline{\theta}$     cost dunction for $ d_{train } $ \\
+$l(\underline{x}, \underline{y}_j \underline{\theta }) = - ln(q ( \underline{y} | \underline{x}_j \underline{\theta } )  $ loss for one pair $  (\underline{x}, \underline{y})  $ \\
+$  q () \leftrightarrow $ DNN ???\\
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

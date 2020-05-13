@@ -5,3 +5,6 @@
 \BOOKMARK [2][-]{subsection.1.1.3}{rectifier linear unit\(ReLU}{section.1.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.4}{Softmax activatoin function\(classification problem\)}{section.1.1}% 6
 \BOOKMARK [1][-]{section.1.2}{Special case c=2, binary classification problem}{Doc-Start}% 7
+\BOOKMARK [1][-]{section.1.3}{Chapter 4.5 Universal approximation }{Doc-Start}% 8
+\BOOKMARK [2][-]{subsection.1.3.1}{E4.3 Regression with 1 hidden layer}{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{Chapter 4.4 - 4.6 Loss and cost function}{Doc-Start}% 10
