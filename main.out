@@ -1,22 +1,7 @@
-\BOOKMARK [0][-]{Doc-Start}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Overview}{Doc-Start}% 2
-\BOOKMARK [1][-]{section.1.2}{Chapter 1.1 - What is machine learning}{Doc-Start}% 3
-\BOOKMARK [1][-]{section.1.3}{Chapter 1.2 - What is deep learning}{Doc-Start}% 4
-\BOOKMARK [2][-]{subsection.1.3.1}{What is a neural network \(NN\)}{section.1.3}% 5
-\BOOKMARK [1][-]{section.1.4}{Chapter 1.3 - Examples for Deep Learning}{Doc-Start}% 6
-\BOOKMARK [0][-]{section.1.4}{Tools for Deep Learning}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Datasets}{section.1.4}% 8
-\BOOKMARK [0][-]{section.2.1}{Machine learning basics}{}% 9
-\BOOKMARK [1][-]{section.3.1}{Linear Algebra}{section.2.1}% 10
-\BOOKMARK [1][-]{section.3.2}{Chapter 3.2 Random variable and probability distribution}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 One random vector}{section.3.2}% 12
-\BOOKMARK [1][-]{section.3.3}{Chapter 3.3 - Multiple random vectors}{section.2.1}% 13
-\BOOKMARK [2][-]{subsection.3.3.1}{ Chapter 3.2.3 - Kernel basaed density estimation }{section.3.3}% 14
-\BOOKMARK [1][-]{section.3.4}{Chapter 3.4 Kullback-Leibler divergence and cross entropy }{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.3.4.1}{E3.5 KLD between normal and Laplace distribution }{section.3.4}% 16
-\BOOKMARK [1][-]{section.3.5}{Chapter 3.5 Probabilistic framework }{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.3.5.1}{Role of a NN }{section.3.5}% 18
-\BOOKMARK [0][-]{subsection.3.5.1}{Dense Neural Networks }{}% 19
-\BOOKMARK [1][-]{subsection.4.0.1}{4.1 Fully connected neural networks - Neuron}{subsection.3.5.1}% 20
-\BOOKMARK [2][-]{subsection.4.0.2}{Chapter 4.2 Layer of Nurons}{subsection.4.0.1}% 21
-\BOOKMARK [1][-]{section.4.1}{4.3 Feedforward neural network}{subsection.3.5.1}% 22
+\BOOKMARK [0][-]{Doc-Start}{Dense Neural Networks}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Activation function}{Doc-Start}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Sigmoid activation function}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{hyperbolic tangent activation function }{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{rectifier linear unit\(ReLU}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{Softmax activatoin function\(classification problem\)}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Special case c=2, binary classification problem}{Doc-Start}% 7
