@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  14 MAY 2020 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  14 MAY 2020 11:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -1453,12 +1453,8 @@ File: Images/Training423.png Graphic file (type png)
 <use Images/Training423.png>
 Package pdftex.def Info: Images/Training423.png  used on input line 160.
 (pdftex.def)             Requested size: 525.23788pt x 385.25348pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-
- []
-
-[23 <./Images/GradientDescent.png>]) [24 <./Images/Training423.png>]
+ [23 <./Images/GradientDescent.png>])
+[24 <./Images/Training423.png>]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
@@ -1517,7 +1513,7 @@ nek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/User
 s/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 4661483 bytes).
+Output written on main.pdf (28 pages, 4662937 bytes).
 PDF statistics:
  499 PDF objects out of 1000 (max. 8388607)
  82 named destinations out of 1000 (max. 500000)

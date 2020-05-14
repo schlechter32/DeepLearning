@@ -159,7 +159,34 @@ $ \dfrac{\partial L (\underline{\theta})}{\partial w _{L-1, ij}} = \dfrac{\parti
 Layer 1: $ \dfrac{\partial L (\underline{\theta})}{\partial w_{1,ij}} = \underline{\underline{J}}_L ( \underline{a}_L) \cdot \underline{\underline{J}}_{\underline{a}_L}(\underline{a}_{L-1}) , ..., \underline{\underline{J}}_{\underline{a}_2}(\underline{a}_1) \cdot \underline{\underline{J}}_{\underline{a}_1} (w_{1,ij}) $ \\
 \includegraphics[width = \linewidth]{Images/Training423.png}\\
 \textbf{Calculations for backpropagation on Slide 4-24 to 4-27}\\
-
+more about omptimizer in ch.5 \\
+more about model in ch. 6-8 \\
+\textbf{Batch gradient descent }\\
+calculate $  \underline{\nabla} L (\underline{\theta}) = \dfrac{1}{N} \sum_{n=1}^{N} \underline{\nabla } l(\underline{x}(n) , \underline{y} (n); \underline{\theta}) $ \\
+for the whole training set $ D_{train} $ \\
+Difficult for too large N!\\
+e.g. MNIST: 60.000 training smaples \\
+ILSVRC: 1.2M training samples \\
+$\rightarrow$ not enough ram to keep $ D_{train} $ in memory \\
+Solution: stochastic gradient descent (SGD), i.e. calculate $ \underline{\nabla}L $ and update $ \underline{\theta} $ for each minibatch, a block of B samples from $ d_{train} $: \\
+$ \underline{\theta}^{t+1} = \underline{\theta}^t - \underline{\nabla}L (\mathbf(t); \underline{\theta})|_{\underline{\theta} = \underline{\theta}_t} $\\
+$ L(t; \underline{\theta}) =  \dfrac{1}{B} \sum_{n=t'B+1}^{(t' +1) \cdot B} l (\underline{x}(n), \underline{y} ; \underline{\theta})$ \\
+$  B \in \mathds{N}: $ minibatch size, small enough to fit in RAM \\
+$ N/B \ in \mathds{N}:  $ number of minibatches in $ d_{train} $ \\
+$  t = 0,1 ,..,  $: iteration index \\
+$  t' = mod(t, \dfrac{N}{B}) \in \lbrace 0,1,.., \dfrac{N}{B-1} $: minibatch index \\
+$  \underline{\nabla } L (t; \underline{\theta}) $ more noisy than $\underline{\nabla} L (\underline{\theta} )$\\
+$\rightarrow$ stochastic gradient descents \\
+\textbf{Evaluation during training:} \\
+$  \hat{ \underline{\theta}}_k  $ after k-th epoch: $  k = 1,2,.. $ \\
+\textbf{Technical performance metrics:}
+\textbullet training loss: $  L(\hat{\underline{\theta}}_k) $ calculated form training set $ D_{train} $\\
+\textbullet test loss::$ L(\hat{\underline{\theta}}_k) $ calculated form test set $ D_{test} $\\
+and objective performance metrics for classification \\
+\textbullet \textbf{training error rate :} Error rate of $ DNN( \hat{\underline{\theta}}_k) $ for $ D_{train} $\\
+\textbullet \textbf{test error rate :} Error rate of $ DNN( \hat{\underline{\theta}}_k) $ for $ D_{test} $\\
+or:
+\textbullet training/test accuracy =   1- training/test error rate \\
 
 
 
