@@ -1,2 +1,28 @@
 \babel@toc {ngerman}{}
-\contentsline {chapter}{\numberline {1}Dense Neural Networks}{1}{Doc-Start}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{Doc-Start}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Mathematical notations\relax }}{1}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Three steps of machine learning\relax }}{2}{figure.1.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Neural Network\relax }}{3}{figure.1.3}%
+\contentsline {chapter}{\numberline {2}Tools for Deep Learning}{3}{section.1.4}%
+\contentsline {chapter}{\numberline {3}Machine learning basics}{3}{section.2.1}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Vector Normes\relax }}{4}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces One random vector\relax }}{4}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Moments of a vector\relax }}{5}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Multivariate normal (Gaussian) distribution\relax }}{5}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Kernel function\relax }}{6}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Estimated PDF function\relax }}{7}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Forward vs. Backward KL divergence\relax }}{8}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Probabilistic framework of supervised learning\relax }}{9}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The data generating distribution\relax }}{9}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Bayes Rule in DL\relax }}{10}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Bayes decision theorem\relax }}{10}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Supervised learning\relax }}{10}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Calc part1\relax }}{11}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Calc part2\relax }}{11}{figure.3.14}%
+\contentsline {chapter}{\numberline {4}Dense Neural Networks }{11}{subsection.3.5.1}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Neuron\relax }}{12}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer of Neurons\relax }}{12}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Meanings of phi\relax }}{13}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Feedforward multilayer neural network\relax }}{13}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Network Parameters\relax }}{14}{figure.4.5}%
+\contentsline {chapter}{\numberline {5}Dense Neural Networks}{15}{figure.4.5}%

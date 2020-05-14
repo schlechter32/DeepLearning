@@ -1,11 +1,38 @@
 \babel@toc {ngerman}{}
-\contentsline {chapter}{\numberline {1}Dense Neural Networks}{1}{Doc-Start}%
-\contentsline {section}{\numberline {1.1}Activation function}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Sigmoid activation function}{1}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}hyperbolic tangent activation function }{2}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}rectifier linear unit(ReLU}{3}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Softmax activatoin function(classification problem)}{3}{subsection.1.1.4}%
-\contentsline {section}{\numberline {1.2}Special case c=2, binary classification problem}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Chapter 4.5 Universal approximation }{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}E4.3 Regression with 1 hidden layer}{5}{subsection.1.3.1}%
-\contentsline {section}{\numberline {1.4}Chapter 4.4 - 4.6 Loss and cost function}{6}{section.1.4}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{Doc-Start}%
+\contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Chapter 1.1 - What is machine learning}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Chapter 1.2 - What is deep learning}{2}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}What is a neural network (NN)}{3}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Chapter 1.3 - Examples for Deep Learning}{3}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Tools for Deep Learning}{3}{section.1.4}%
+\contentsline {section}{\numberline {2.1}Datasets}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Machine learning basics}{3}{section.2.1}%
+\contentsline {section}{\numberline {3.1}Linear Algebra}{4}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Chapter 3.2 Random variable and probability distribution}{4}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}3.2.1 One random vector}{4}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Chapter 3.3 - Multiple random vectors}{6}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1} Chapter 3.2.3 - Kernel basaed density estimation }{6}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Chapter 3.4 Kullback-Leibler divergence and cross entropy }{7}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}E3.5 KLD between normal and Laplace distribution }{8}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Chapter 3.5 Probabilistic framework }{9}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Role of a NN }{11}{subsection.3.5.1}%
+\contentsline {chapter}{\numberline {4}Dense Neural Networks }{11}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {4.0.1}4.1 Fully connected neural networks - Neuron}{12}{subsection.4.0.1}%
+\contentsline {subsection}{\numberline {4.0.2}Chapter 4.2 Layer of Nurons}{12}{subsection.4.0.2}%
+\contentsline {section}{\numberline {4.1}4.3 Feedforward neural network}{13}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Dense Neural Networks}{15}{figure.4.5}%
+\contentsline {section}{\numberline {5.1}Activation function}{15}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Sigmoid activation function}{15}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}hyperbolic tangent activation function }{16}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}rectifier linear unit(ReLU}{17}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Softmax activatoin function(classification problem)}{17}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Special case c=2, binary classification problem}{18}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Chapter 4.5 Universal approximation }{18}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}E4.3 Regression with 1 hidden layer}{19}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Chapter 4.4 - 4.6 Loss and cost function}{20}{section.5.4}%
+\contentsline {subsubsection}{4.6.1 Regression Problem}{20}{subsubsection*.1}%
+\contentsline {subsubsection}{4.6.2 Classification}{20}{subsubsection*.2}%
+\contentsline {subsection}{\numberline {5.4.1}4.6.3 Semantic segmentation }{21}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}Chapter 4.7 Training}{22}{section.5.5}%
+\contentsline {subsubsection}{Chainrule of derivative (back propagation)}{23}{subsubsection*.3}%

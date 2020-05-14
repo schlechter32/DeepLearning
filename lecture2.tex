@@ -76,9 +76,94 @@ Picture is for black 1 $ w_i $ red another $ w_i $ green another example $ w_i $
 \section{Chapter 4.4 - 4.6 Loss and cost function}
 \textbf{Review chapter 3.4}	\\
 \includegraphics[width=\linewidth]{Images/ProbabalisticFrameworkSupervisedLearning.png}\\
-$ \underset{\underline{\theta}}{min}  L ( \underline{\theta  }) =  \dfrac{1}{N} = \sum_{n=1}^{N} (l(\underline{x}(n), y(n)_i \underline{\theta}$     cost dunction for $ d_{train } $ \\
+$ \underset{\underline{\theta}}{min}  L ( \underline{\theta  }) =  \dfrac{1}{N} = \sum_{n=1}^{N} (l(\underline{x}(n), y(n)_i \underline{\theta}$     cost function for $ d_{train } $ \\
 $l(\underline{x}, \underline{y}_j \underline{\theta }) = - ln(q ( \underline{y} | \underline{x}_j \underline{\theta } )  $ loss for one pair $  (\underline{x}, \underline{y})  $ \\
-$  q () \leftrightarrow $ DNN ???\\
+$  q () \leftrightarrow $ DNN ???
+\subsubsection{4.6.1 Regression Problem}
+$ \underline{x} \in \Re^d $: random input \\
+$ \underline{y} \in \Re^c $ desired random output \\
+Assumption: DNN estimates the mean of $ \underline{y} $, i.e. \\
+$  \underline{y} = f(\underline{x} , \underline{\theta})  + \underline{z} , \underline{z}$ : noise \\
+f is calculated by DNN \\
+\textbf{case A: } : $  \underline{z} \sim N(\underline{0} , \sigma^2 \underline{\underline{I}}),$ white Gaussian noise\\
+$ \underline{y} \sim N(f(\underline{x}, \underline{\theta}), \sigma^2 \underline{\underline{I}}  ) $\\
+$ q (\underline{y} | \underline{x} , \underline{\theta}) = \dfrac{1}{(2 \pi \sigma^2)^{c/2}}  exp ( \dfrac{-1}{2 \sigma^2} || \underline{y} - f(\underline{x}, \underline{\theta) ||^2})$ \\
+$ l(\underline{x}, \underline{y} , \underline{\theta})  = -ln (q(\underline{y}| \underline{x} , \underline{\theta})) = const.+ \dfrac{1}{\sigma^2} || \underline{y} - f(\underline{x} , \underline{\theta}) ||^2\\
+L(\underline{\theta}) = \dfrac{1}{N} \sum_{n=1}^{N} || \underline{y}(n) - f(\underline{x} , \underline{\theta}) ||^2 \\
+ \rightarrow l_2- loss, $ mean square error (MSE) loss , least squares (LS) method \\
+ min $ L(\underline{\theta}) $ is a parameter estimation problem \\
+\textbf{ case B:} \\
+$ \underline{z} \sim N(\underline{0} , \underline{\underline{C}}) ,  $ colored Gaussian noise \\
+$ L(\underline{\theta})  = \dfrac{1}{N} \sum_{n=1}^{N} [\underline{y} - (f(\underline{x}(n) , \underline{\theta})]^T \cdot \underline{\underline{C}}^{-1} \cdot [\underline{y} - (f(\underline{x}) , \underline{\theta})] $ , \textbf{weighted MSE loss}\\
+Rarely used in real life applications: \\
+\textbullet how to know $ \underline{\underline{c}} $ \\
+\textbullet $ \underline{\underline{C}}^{-1} $ expensive for large $ \underline{\underline{C}} $ \\
+\subsubsection{4.6.2 Classification}
+$ \underline{x} \ in \Re^d  $: input \\
+$ \underline{y} \in \lbrace \underline{e}_1 , \underline{e}_2,..,\underline{e}_c \rbrace $ \\: class label for $ \underline{x} $ in one-hot coding \\
+Let $ p_i = P(\underline{y} = \underline{e}i | \underline{x} )  $: true posterior probability \\
+ch: 3.2 : $ P(\underline{y} | \underline{x}) = \prod_{i=1}^{c}  p_i ^{y_i}$ true PMF \\
+But $ p_i $ unknown \\
+\textbf{DNN: }
+\textbullet output $ f(\underline{y} ,\underline{\theta}) = [f_i (\underline{x}; \underline{\theta})] \in \Re^c $ an estimate for $  [p_i]  $ \\
+\textbullet i. e. $ P(\underline{y} | \underline{x}) $ approximated $ Q (\underline{y} | \underline{x} ; \underline{\theta})  = \prod_{ i=1 }^{c} f_i ( \underline{x} ; \underline{\theta})^{y_i}$\\
+in order to ensure : \\
+\textbullet $  0 < f_i (\underline{y} ; \underline{\theta}) < 1 \\ $\\
+\textbullet $  \sum_{i=1}^{c} f_i (\underline{x} ; \underline{\theta})  = 1,$ \\
+softmax is used in the output layer : \\
+$  \underline{x} _{L} = f (\underline{x} ; \underline{\theta}) = \phi_L (\underline{a}_lL) = softmax (\underline{a}_L) , $ see ch.4.4\\
+$  \rightarrow \text{ Loss } l(\underline{x} , \underline{y} ; \underline{\theta}) = - ln(Q(\underline{y} | \underline{x} ; \underline{\theta })) = \sum_{i=1  }^{c} y_i ln (f_i (\underline{y} ; \underline{\theta}))   = - \underline{y} ^T ln (f(\underline{x} ; \underline{ \theta })) \geq 0 $\\
+categorical cross entropy(CE) loss \\
+Special case : Binary classification , c = 2 \\
+ch.4.4: $ softmax , c = 2 \leftrightarrows sigmoid $ \\
+i.e. one output neuron with sigmoid activation function $ f(\underline{x}; \underline{ \theta})  = \sigma (a_L)$ is sufficient\\
+Let $  y_1 = y, y_2 = 1 - y ; f_1 = f ; f_2 = 1-f $ \\
+$ \rightarrow l(\underline{x} , \underline{y} ; \underline{\theta}) = - y ln(f(\underline{x}; \underline{\theta}) + (1-y)) \cdot ln(1-f(\underline{x}; \underline{\theta})) $ , binary CE loss \\
+\textbf{True probabilistic way toward cost functions}\\
+\includegraphics[width=\linewidth]{Images/ProbabalisticWayCostFunction.png}\\
+\subsection{4.6.3 Semantic segmentation }
+\textbf{pixelwise classification }\\
+categorical cross entropy loss: \\
+$  l(\underline{\underline{X}} , \underline{\underline{Y}}; \underline{\theta}) = \sum_{m=1}^{M} \sum_{n=1}^{N}[- \underline{y}_{mn} \cdot ln (\hat{\underline{y}}_{mn} ( \underline{\underline{X}}, \underline{\theta} )) ] $
+sum over all pixels\\
+Problem: imbalanced classes \\
+e.g (c=2) background and foreground with 90 \% background and 10 \% foreground pixels , 90 \% loss function for the foreground \\
+$\rightarrow l(\cdot)$ cares more about the major class and less about the minor class but the minor class(foreground) is object of interest. 
+$\rightarrow$ reduced segmentation accuracy for the minor class \\
+\textbf{Solutions:} \\
+\textbullet Weighted categorical CE loss \\
+\textbullet region-based loss 
+\textbf{Jaccard index only used for result evaluation not suitable as loss function for training}\\
+\textbullet minimize loss, not max J or D for those indexes\\
+\textbullet $ |A|  \in \mathds{N}$, not differential with respect to $ \underline{\theta} $\\
+\textbullet $ \underline{y}_{mn} $ contains 0 or 1 as desired, but $ \hat{\underline{y}}  $ contains real numbers $ \in (0,1) \in softmax $ \\
+$\rightarrow$ adapted definition of J and D are necessary \\
+\includegraphics[width=\linewidth]{Images/SoftJaccardDiceLoss.png}\\
+\textbf{Very good for strongly imbalanced classes }
+\section{Chapter 4.7 Training}
+\textbullet training set $ _{train} = \lbrace \underline{x} , \underline{y } , 1 \leq n \leq N \rbrace $\\
+\textbullet cost function $ L(\underline{\theta}) = \dfrac{1}{N} \sum_{n=1}^{N} l(\underline{x}(n),\underline{y}; \underline{\theta}) $ \\
+\textbullet task: $ min L(\underline{\theta}) $\\
+\textbullet optimizer: optimization algorithm to solve the minimization task $ L(\underline{\theta}) $ \\
+No closed-form solution! Numerical minimization necessary, see AM (last part) \\
+\textbf{in DL: gradient decent approach and variants(like hiking)}\\
+need only 1. order derivative of $ L(\underline{\theta}) $ \\
+\includegraphics[width = \linewidth]{Images/GradientDescent.png}\\
+calculation of the gradient vector $  \underline{\nabla} L(\underline{\theta}) $ is non trivial \\
+\subsubsection{Chainrule of derivative (back propagation)} 
+$\dfrac{ f(g(\theta))}{d \theta} = \dfrac{df}{dg} \cdot \dfrac{dg}{d \theta} $ \\
+Layerindex L: $  \dfrac{\partial L_{cost}(\underline{\theta})}{\partial w_{L,ij}} = \dfrac{\partial L_{cost} }{\partial \underline{x}_{L}} \cdot \dfrac{\partial \underline{x}_K}{\partial \underline{a}_L} \cdot \dfrac{\partial \underline{a}_L }{\partial w_{L,ij}} = \underbrace{ \underline{\underline{J}}_L (\underline{x}_L) \cdot \underline{\underline{J}}_{\underline{x}_L}(\underline{a}_L)}_{\underline{\underline{J}}_L (\underline{a}_L)} \cdot \underline{\underline{J}}_{\underline{a}_L} (w_{L,ij}) $, Jacobi matrices see ch. 3.1\\
+Notation: $ \underline{\underline{J}}_y (x ) = \dfrac{\partial y}{\partial x}  $ \\
+Layer $ L-1$:\\
+$ \dfrac{\partial L (\underline{\theta})}{\partial w _{L-1, ij}} = \dfrac{\partial L}{\partial \underline{a}_L} \cdot \dfrac{\partial \underline{a}_L}{\partial \underline{a}_{L-1}} \cdot \dfrac{\partial  \underline{a}_{L-1}}{\partial w_{L-1,ij}} = \underbrace{ \underline{\underline{J}}_L (\underline{a}_L) \cdot \underline{\underline{J}}_{\underline{a}_L} (\underline{a}_{L-1})}_{\underline{\underline{J}}_L(\underline{a}_{L-1})} \cdot \underline{\underline{J}}_{\underline{a}_{L-1}}(w_{L-1,ij}) $ \\
+Layer 1: $ \dfrac{\partial L (\underline{\theta})}{\partial w_{1,ij}} = \underline{\underline{J}}_L ( \underline{a}_L) \cdot \underline{\underline{J}}_{\underline{a}_L}(\underline{a}_{L-1}) , ..., \underline{\underline{J}}_{\underline{a}_2}(\underline{a}_1) \cdot \underline{\underline{J}}_{\underline{a}_1} (w_{1,ij}) $ \\
+\includegraphics[width = \linewidth]{Images/Training423.png}\\
+\textbf{Calculations for backpropagation on Slide 4-24 to 4-27}\\
+
+
+
+
+
 
 
 	

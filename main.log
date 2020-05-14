@@ -1,15 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.4.25)  13 MAY 2020 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  14 MAY 2020 10:49
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**main.tex
-(./main.tex
+**./main.tex
+(main.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-04-06> (./notes.cls
+L3 programming layer <2020-05-11> (notes.cls
 Document Class: notes 2019/05/26 My custom notes
-(c:/texlive/2020/texmf-dist/tex/latex/base/report.cls
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\repo
+rt.cls"
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
-(c:/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size
+12.clo"
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
@@ -25,17 +27,21 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-(c:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\
+geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(c:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\i
+fvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\i
+ftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count176
@@ -50,22 +56,29 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen141
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks16
-)
-(c:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\
+geometry.cfg"))
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inpu
+tenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(c:/texlive/2020/texmf-dist/tex/latex/base/ansinew.def
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ansi
+new.def"
 File: ansinew.def 2018/08/11 v1.3c Input encoding file
 ))
-(c:/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\font
+enc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks19
 \symAMSa=\mathgroup4
@@ -74,24 +87,30 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+mstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen143
 ))
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen144
 )
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count179
@@ -132,7 +151,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
-(c:/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\am
+sthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks25
 \thm@bodyfont=\toks26
@@ -144,30 +164,37 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip54
 \dth@everypar=\toks30
 )
-(c:/texlive/2020/texmf-dist/tex/latex/base/latexsym.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\late
+xsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/epsfig.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+epsfig.sty"
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
+cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
+def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen152
@@ -176,7 +203,8 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \epsfxsize=\dimen154
 \epsfysize=\dimen155
 )
-(c:/texlive/2020/texmf-dist/tex/latex/tools/bm.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\bm.
+sty"
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
 \symboldletters=\mathgroup8
@@ -185,13 +213,16 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
-(c:/texlive/2020/texmf-dist/tex/latex/tools/xspace.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xsp
+ace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/csquotes/csquotes.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
+csquotes.sty"
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
 
-(c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\
+etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count191
 )
@@ -203,19 +234,23 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \csq@tshold=\count197
 \csq@ltx@everypar=\toks31
 
-(c:/texlive/2020/texmf-dist/tex/latex/csquotes/csquotes.def
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
+csquotes.def"
 File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(c:/texlive/2020/texmf-dist/tex/latex/csquotes/csquotes.cfg
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\
+csquotes.cfg"
 File: csquotes.cfg 
 ))
-(c:/texlive/2020/texmf-dist/tex/latex/psnfss/times.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ti
+mes.sty"
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\
+listings.sty"
 \lst@mode=\count198
 \lst@gtempboxa=\box47
 \lst@token=\toks32
@@ -229,30 +264,36 @@ Package: times 2020/03/25 PSNFSS-v9.3 (SPQR)
 \lst@lineno=\count269
 \lst@maxwidth=\dimen159
 
-(c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\
+lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count270
 \lst@skipnumbers=\count271
 \lst@framebox=\box48
 )
-(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\
+listings.cfg"
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+color.sty"
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
+cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-(c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\c
+aption.sty"
+Package: caption 2020/05/10 v3.4j Customizing captions (AR)
 
-(c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\c
+aption3.sty"
+Package: caption3 2020/05/10 v1.11 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen160
 \captionmargin@=\dimen161
@@ -267,7 +308,8 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count273
 Package caption Info: listings package is loaded.
 )
-(c:/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\
+titlesec.sty"
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box49
 \beforetitleunit=\skip55
@@ -279,57 +321,71 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidthlast=\dimen170
 \titlewidthfirst=\dimen171
 )
-(c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
+hyperref.sty"
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
-(c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds
+\ltxcmds.sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmd
+s\pdftexcmds.sty"
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infware
+rr\infwarerr.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetke
+ys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefin
+ekeys\kvdefinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfesca
+pe\pdfescape.sty"
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\h
+ycolor.sty"
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmac
+ro\letltxmacro.sty"
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\a
+uxhook.sty"
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions
+\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen172
 \Hy@linkcounter=\count274
 \Hy@pagecounter=\count275
 
-(c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
+pd1enc.def"
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc
+\intcalc.sty"
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmd
+s\etexcmds.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count276
@@ -342,17 +398,20 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
 \c@Hy@tempcnt=\count277
 
-(c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.s
+ty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen173
 
-(c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\
+bitset.sty"
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintc
+alc\bigintcalc.sty"
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -369,7 +428,8 @@ Package hyperref Info: PDF/A mode OFF on input line 6460.
 LaTeX Info: Redefining \ref on input line 6500.
 LaTeX Info: Redefining \pageref on input line 6504.
 
-(c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegsh
+i\atbegshi.sty"
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
 \Hy@abspage=\count279
@@ -378,19 +438,23 @@ Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
+hpdftex.def"
 File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 
-(c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend
+\atveryend.sty"
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
 \Fld@listcount=\count282
 \c@bookmark@seq@number=\count283
 
-(c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfile
+check\rerunfilecheck.sty"
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquec
+ounter\uniquecounter.sty"
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -398,7 +462,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip57
 )
-(c:/texlive/2020/texmf-dist/tex/latex/tocloft/tocloft.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tocloft\t
+ocloft.sty"
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip58
@@ -438,7 +503,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cfttabindent=\skip90
 \cfttabnumwidth=\skip91
 )
-(c:/texlive/2020/texmf-dist/tex/latex/doublestroke/dsfont.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doublestr
+oke\dsfont.sty"
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
 \c@myequations=\count286
@@ -450,38 +516,52 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 \cftafterequtitleskip=\skip96
 \c@theorem=\count288
 )
-(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/03/22 3.42 The Babel package
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
+abel.sty"
+Package: babel 2020/04/28 3.43 The Babel package
 
-(c:/texlive/2020/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/03/22 3.42 Babel switching mechanism
-)
-(c:/texlive/2020/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
-phy)
-
-(c:/texlive/2020/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
-aphy)
-
-(c:/texlive/2020/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/03/22 3.42 Babel common definitions
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
+abel.def"
+File: babel.def 2020/04/28 3.43 Babel common definitions
 \babel@savecnt=\count289
 \U@D=\dimen176
 
-(c:/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\t
+xtbabel.def")
 \bbl@readstream=\read2
-\bbl@dirlevel=\count290
 )
+\bbl@dirlevel=\count290
+
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bbl
+opts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-ger
+man\ngerman.ldf"
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
+phy)
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-ger
+man\ngermanb.ldf"
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
+aphy)
 Package babel Info: Making " an active character on input line 121.
 )))
-(c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\
+pdfpages.sty"
 Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 
-(c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifth
+en.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\cal
+c.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count291
 \calc@Bcount=\count292
@@ -494,13 +574,15 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count293
 \calc@Cskip=\skip99
 )
-(c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eso-pic\e
+so-pic.sty"
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 )
 \AM@pagewidth=\dimen179
 \AM@pageheight=\dimen180
 
-(c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\
+pppdftex.def"
 File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box50
@@ -510,10 +592,12 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count295
 \AM@templatesizebox=\box51
 )
-(c:/texlive/2020/texmf-dist/tex/latex/minitoc/minitoc.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/minitoc\m
+initoc.sty"
 Package: minitoc 2018/07/12 v62 Package minitoc
 
-(c:/texlive/2020/texmf-dist/tex/latex/minitoc/mtcmess.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/minitoc\m
+tcmess.sty"
 Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
@@ -536,7 +620,7 @@ Package minitoc Info: I0002
 
 \openout3 = `main.mtc'.
 
- (./main.mtc0)
+ (main.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -555,10 +639,12 @@ Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
 
-(c:/texlive/2020/texmf-dist/tex/latex/minitoc/english.mld
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/minitoc\e
+nglish.mld"
 File: english.mld 2006/01/13
 )
-(c:/texlive/2020/texmf-dist/tex/latex/minitoc/english.mld
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/minitoc\e
+nglish.mld"
 File: english.mld 2006/01/13
 ))
 Package csquotes Info: Checking for multilingual support...
@@ -566,12 +652,16 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 
-(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend
+\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count300
 \l__pdf_internal_box=\box54
-)
-(./main.aux (./lecture2.aux))
+) (main.aux (lecture1.aux
+
+LaTeX Warning: Label `fig1_1' multiply defined.
+
+) (lecture2.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -593,7 +683,8 @@ LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 6.
 
 
-(c:/texlive/2020/texmf-dist/tex/latex/psnfss/t1ptm.fd
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1
+ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -630,7 +721,9 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mk
+ii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count301
 \scratchdimen=\dimen181
@@ -643,15 +736,13 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \MPnumerator=\count305
 \makeMPintoPDFobject=\count306
 \everyMPtoPDFconversion=\toks38
-) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+)
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-
+pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-
-(c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+)
 \c@lstlisting=\count307
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -659,13 +750,16 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring OFF on input line 6.
 
-(c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\
+nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-(c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\
+refcount.sty"
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitl
+estring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count308
@@ -673,16 +767,17 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
-
-(./main.out) (./main.out)
+ (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 
-(c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdflscape
+\pdflscape.sty"
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -729,30 +824,30 @@ Package minitoc(hints) Warning: W0023
 
 
 
-pdfTeX warning: pdflatex.exe (file ./PDFs/Cover.pdf): PDF inclusion: found PDF 
-version <1.7>, but at most version <1.5> allowed
-<PDFs/Cover.pdf, id=44, 597.23125pt x 845.1575pt>
+pdfTeX warning: pdflatex (file ./PDFs/Cover.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
+<PDFs/Cover.pdf, id=136, 597.23125pt x 845.1575pt>
 File: PDFs/Cover.pdf Graphic file (type pdf)
 <use PDFs/Cover.pdf>
 Package pdftex.def Info: PDFs/Cover.pdf  used on input line 8.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./PDFs/Cover.pdf): PDF inclusion: found PDF 
-version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./PDFs/Cover.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
 File: PDFs/Cover.pdf Graphic file (type pdf)
 <use PDFs/Cover.pdf>
 Package pdftex.def Info: PDFs/Cover.pdf  used on input line 8.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./PDFs/Cover.pdf): PDF inclusion: found PDF 
-version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./PDFs/Cover.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex.exe (file ./PDFs/Cover.pdf): PDF inclusion: found PDF 
-version <1.7>, but at most version <1.5> allowed
-<PDFs/Cover.pdf, id=47, page=1, 597.23125pt x 845.1575pt>
+pdfTeX warning: pdflatex (file ./PDFs/Cover.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
+<PDFs/Cover.pdf, id=139, page=1, 597.23125pt x 845.1575pt>
 File: PDFs/Cover.pdf Graphic file (type pdf)
 <use PDFs/Cover.pdf, page 1>
 Package pdftex.def Info: PDFs/Cover.pdf , page1 used on input line 8.
@@ -782,21 +877,40 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc1.
 \openout3 = `main.mtc1'.
 
- (./main.toc
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc2.
+\openout3 = `main.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc3.
+\openout3 = `main.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc4.
+\openout3 = `main.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc5.
+\openout3 = `main.mtc5'.
+
+ (main.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 2.
 
 
-(c:/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulas
+y.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
@@ -807,31 +921,428 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- (./main.lof)
+ (main.lof [1
+
+{C:/Users/Nicolas Hornek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- (./main.equ)
+ (main.equ [2])
 \tf@equ=\write7
 \openout7 = `main.equ'.
 
-[1
+ [3]
+\openout2 = `lecture1.aux'.
 
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `lecture2.aux'.
+ (lecture1.tex
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+9.
 
-
-(./lecture2.tex
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-.
- (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts
+1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+<Images/vlc_ZnQlUU16ty.png, id=247, 542.77782pt x 245.41687pt>
+File: Images/vlc_ZnQlUU16ty.png Graphic file (type png)
+<use Images/vlc_ZnQlUU16ty.png>
+Package pdftex.def Info: Images/vlc_ZnQlUU16ty.png  used on input line 20.
+(pdftex.def)             Requested size: 367.67607pt x 231.84152pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 20.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+<Images/vlc_EyL6r2HUlJ.png, id=249, 627.09282pt x 404.26031pt>
+File: Images/vlc_EyL6r2HUlJ.png Graphic file (type png)
+<use Images/vlc_EyL6r2HUlJ.png>
+Package pdftex.def Info: Images/vlc_EyL6r2HUlJ.png  used on input line 29.
+(pdftex.def)             Requested size: 367.6755pt x 231.83719pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 29.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--34
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 \section{Chapter 1.2 - What is deep learning}
+                                                   [1
+
+
+ <./Images/vlc_ZnQlUU16ty.png>]
+<Images/vlc_7mdff7jBZY.png, id=258, 581.92406pt x 446.41782pt>
+File: Images/vlc_7mdff7jBZY.png Graphic file (type png)
+<use Images/vlc_7mdff7jBZY.png>
+Package pdftex.def Info: Images/vlc_7mdff7jBZY.png  used on input line 43.
+(pdftex.def)             Requested size: 367.67075pt x 231.83887pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 43.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+[2 <./Images/vlc_EyL6r2HUlJ.png>]
+<Images/vlc_YAS4jaJ0JB.png, id=265, 663.22781pt x 469.00218pt>
+File: Images/vlc_YAS4jaJ0JB.png Graphic file (type png)
+<use Images/vlc_YAS4jaJ0JB.png>
+Package pdftex.def Info: Images/vlc_YAS4jaJ0JB.png  used on input line 54.
+(pdftex.def)             Requested size: 367.66063pt x 231.83118pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 54.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+[3 <./Images/vlc_7mdff7jBZY.png>]
+File: Images/vlc_ZnQlUU16ty.png Graphic file (type png)
+<use Images/vlc_ZnQlUU16ty.png>
+Package pdftex.def Info: Images/vlc_ZnQlUU16ty.png  used on input line 58.
+(pdftex.def)             Requested size: 367.67607pt x 231.84152pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 58.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+File: Images/vlc_ZnQlUU16ty.png Graphic file (type png)
+<use Images/vlc_ZnQlUU16ty.png>
+Package pdftex.def Info: Images/vlc_ZnQlUU16ty.png  used on input line 64.
+(pdftex.def)             Requested size: 367.67607pt x 231.84152pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 64.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
+
+ []
+
+[4 <./Images/vlc_YAS4jaJ0JB.png>]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 6
+8.
+
+("C:\Users\Nicolas Hornek\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doublestr
+oke\udsrom.fd"
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+<Images/vlc_uBIEApi83B.png, id=281, 675.27281pt x 421.575pt>
+File: Images/vlc_uBIEApi83B.png Graphic file (type png)
+<use Images/vlc_uBIEApi83B.png>
+Package pdftex.def Info: Images/vlc_uBIEApi83B.png  used on input line 73.
+(pdftex.def)             Requested size: 367.6712pt x 231.84123pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 73.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--92
+
+ []
+
+[5 <./Images/vlc_uBIEApi83B.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 93--105
+
+ []
+
+<Images/vlc_5dSX2DXM5y.png, id=289, 306.39468pt x 204.01219pt>
+File: Images/vlc_5dSX2DXM5y.png Graphic file (type png)
+<use Images/vlc_5dSX2DXM5y.png>
+Package pdftex.def Info: Images/vlc_5dSX2DXM5y.png  used on input line 112.
+(pdftex.def)             Requested size: 367.6858pt x 231.84787pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 112.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--113
+
+ []
+
+<Images/vlc_9TMrsGBi0o.png, id=290, 402.75468pt x 176.91093pt>
+File: Images/vlc_9TMrsGBi0o.png Graphic file (type png)
+<use Images/vlc_9TMrsGBi0o.png>
+Package pdftex.def Info: Images/vlc_9TMrsGBi0o.png  used on input line 127.
+(pdftex.def)             Requested size: 367.66269pt x 231.83868pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 127.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--128
+
+ []
+
+[6 <./Images/vlc_5dSX2DXM5y.png>]
+<Images/vlc_aB15OK4H2t.png, id=297, 683.55376pt x 389.95688pt>
+File: Images/vlc_aB15OK4H2t.png Graphic file (type png)
+<use Images/vlc_aB15OK4H2t.png>
+Package pdftex.def Info: Images/vlc_aB15OK4H2t.png  used on input line 153.
+(pdftex.def)             Requested size: 367.67416pt x 231.83383pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 153.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--154
+
+ []
+
+[7 <./Images/vlc_9TMrsGBi0o.png>]
+<Images/vlc_oQFy31Qrgm.png, id=303, 573.64313pt x 413.29407pt>
+File: Images/vlc_oQFy31Qrgm.png Graphic file (type png)
+<use Images/vlc_oQFy31Qrgm.png>
+Package pdftex.def Info: Images/vlc_oQFy31Qrgm.png  used on input line 190.
+(pdftex.def)             Requested size: 367.67303pt x 231.8404pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 190.
+See the caption package documentation for explanation.
+
+<Images/vlc_yZiUr02XFG.png, id=304, 666.99188pt x 353.06906pt>
+File: Images/vlc_yZiUr02XFG.png Graphic file (type png)
+<use Images/vlc_yZiUr02XFG.png>
+Package pdftex.def Info: Images/vlc_yZiUr02XFG.png  used on input line 191.
+(pdftex.def)             Requested size: 367.67104pt x 231.83568pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 191.
+See the caption package documentation for explanation.
+
+<Images/vlc_noaWeuo6ii.png, id=305, 712.91344pt x 399.74344pt>
+File: Images/vlc_noaWeuo6ii.png Graphic file (type png)
+<use Images/vlc_noaWeuo6ii.png>
+Package pdftex.def Info: Images/vlc_noaWeuo6ii.png  used on input line 193.
+(pdftex.def)             Requested size: 367.66035pt x 231.83914pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 193.
+See the caption package documentation for explanation.
+
+<Images/vlc_jGHgEfwvB6.png, id=306, 522.45187pt x 204.01219pt>
+File: Images/vlc_jGHgEfwvB6.png Graphic file (type png)
+<use Images/vlc_jGHgEfwvB6.png>
+Package pdftex.def Info: Images/vlc_jGHgEfwvB6.png  used on input line 194.
+(pdftex.def)             Requested size: 367.66695pt x 231.84787pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 194.
+See the caption package documentation for explanation.
+
+<Images/vlc_y3WEcY54hI.png, id=307, 728.7225pt x 516.42938pt>
+File: Images/vlc_y3WEcY54hI.png Graphic file (type png)
+<use Images/vlc_y3WEcY54hI.png>
+Package pdftex.def Info: Images/vlc_y3WEcY54hI.png  used on input line 195.
+(pdftex.def)             Requested size: 367.66281pt x 231.83159pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 195.
+See the caption package documentation for explanation.
+
+<Images/vlc_cdtgmn3NAF.png, id=308, 727.96968pt x 514.17094pt>
+File: Images/vlc_cdtgmn3NAF.png Graphic file (type png)
+<use Images/vlc_cdtgmn3NAF.png>
+Package pdftex.def Info: Images/vlc_cdtgmn3NAF.png  used on input line 197.
+(pdftex.def)             Requested size: 367.67177pt x 231.83768pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 197.
+See the caption package documentation for explanation.
+
+<Images/vlc_7J4xeI8M2g.png, id=309, 736.25063pt x 520.94624pt>
+File: Images/vlc_7J4xeI8M2g.png Graphic file (type png)
+<use Images/vlc_7J4xeI8M2g.png>
+Package pdftex.def Info: Images/vlc_7J4xeI8M2g.png  used on input line 198.
+(pdftex.def)             Requested size: 367.67503pt x 231.83228pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 198.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--199
+
+ []
+
+[8 <./Images/vlc_aB15OK4H2t.png>] [9 <./Images/vlc_oQFy31Qrgm.png> <./Images/vl
+c_yZiUr02XFG.png>] [10 <./Images/vlc_noaWeuo6ii.png> <./Images/vlc_jGHgEfwvB6.p
+ng> <./Images/vlc_y3WEcY54hI.png>] [11 <./Images/vlc_cdtgmn3NAF.png> <./Images/
+vlc_7J4xeI8M2g.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 209.
+
+<Images/vlc_9n6oQpeN9Q.png, id=336, 725.71124pt x 517.935pt>
+File: Images/vlc_9n6oQpeN9Q.png Graphic file (type png)
+<use Images/vlc_9n6oQpeN9Q.png>
+Package pdftex.def Info: Images/vlc_9n6oQpeN9Q.png  used on input line 210.
+(pdftex.def)             Requested size: 367.67168pt x 231.83571pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 210.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+<Images/vlc_AU8hElxhfe.png, id=337, 728.7225pt x 514.17094pt>
+File: Images/vlc_AU8hElxhfe.png Graphic file (type png)
+<use Images/vlc_AU8hElxhfe.png>
+Package pdftex.def Info: Images/vlc_AU8hElxhfe.png  used on input line 212.
+(pdftex.def)             Requested size: 367.66281pt x 231.83768pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 212.
+See the caption package documentation for explanation.
+
+<Images/vlc_sWrXTyRkHo.png, id=338, 657.95813pt x 456.20438pt>
+File: Images/vlc_sWrXTyRkHo.png Graphic file (type png)
+<use Images/vlc_sWrXTyRkHo.png>
+Package pdftex.def Info: Images/vlc_sWrXTyRkHo.png  used on input line 214.
+(pdftex.def)             Requested size: 367.67094pt x 231.83276pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 214.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--221
+
+ []
+
+[12 <./Images/vlc_9n6oQpeN9Q.png> <./Images/vlc_AU8hElxhfe.png>]
+<Images/vlc_0aZPmMALw3.png, id=345, 808.52063pt x 576.65437pt>
+File: Images/vlc_0aZPmMALw3.png Graphic file (type png)
+<use Images/vlc_0aZPmMALw3.png>
+Package pdftex.def Info: Images/vlc_0aZPmMALw3.png  used on input line 225.
+(pdftex.def)             Requested size: 367.66774pt x 231.83673pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 225.
+See the caption package documentation for explanation.
+
+<Images/vlc_doexEBUTyy.png, id=346, 781.41937pt x 557.83406pt>
+File: Images/vlc_doexEBUTyy.png Graphic file (type png)
+<use Images/vlc_doexEBUTyy.png>
+Package pdftex.def Info: Images/vlc_doexEBUTyy.png  used on input line 226.
+(pdftex.def)             Requested size: 367.66063pt x 231.83728pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 226.
+See the caption package documentation for explanation.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 222--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--21
+
+ []
+
+[13 <./Images/vlc_sWrXTyRkHo.png> <./Images/vlc_0aZPmMALw3.png>] [14 <./Images/
+vlc_doexEBUTyy.png>]
+\openout2 = `lecture2.aux'.
+
+ (lecture2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
-<Images/SigmoidActivationSketch.png, id=72, 334.24875pt x 131.74219pt>
+<Images/SigmoidActivationSketch.png, id=358, 334.24875pt x 131.74219pt>
 File: Images/SigmoidActivationSketch.png Graphic file (type png)
 <use Images/SigmoidActivationSketch.png>
 Package pdftex.def Info: Images/SigmoidActivationSketch.png  used on input line
@@ -842,32 +1353,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--18
 
  []
 
-<Images/HyperbolicTangentActivation.png, id=74, 245.41687pt x 157.33781pt>
+<Images/HyperbolicTangentActivation.png, id=359, 245.41687pt x 157.33781pt>
 File: Images/HyperbolicTangentActivation.png Graphic file (type png)
 <use Images/HyperbolicTangentActivation.png>
 Package pdftex.def Info: Images/HyperbolicTangentActivation.png  used on input 
 line 20.
 (pdftex.def)             Requested size: 525.23788pt x 336.78839pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.22  \subsection{rectifier linear unit(ReLU}
-                                              [1
+[15
 
 
  <./Images/SigmoidActivationSketch.png>]
-<Images/ReLuActivation.png, id=86, 147.55125pt x 107.65219pt>
+<Images/ReLuActivation.png, id=366, 147.55125pt x 107.65219pt>
 File: Images/ReLuActivation.png Graphic file (type png)
 <use Images/ReLuActivation.png>
 Package pdftex.def Info: Images/ReLuActivation.png  used on input line 27.
 (pdftex.def)             Requested size: 525.23788pt x 383.34076pt.
- [2 <./Images/HyperbolicTangentActivation.png>]
+ [16 <./Images/HyperbolicTangentActivation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 37--49
 
  []
 
-<Images/OutputLayerSoftmax.png, id=92, 648.17157pt x 107.65219pt>
+<Images/OutputLayerSoftmax.png, id=372, 648.17157pt x 107.65219pt>
 File: Images/OutputLayerSoftmax.png Graphic file (type png)
 <use Images/OutputLayerSoftmax.png>
 Package pdftex.def Info: Images/OutputLayerSoftmax.png  used on input line 54.
@@ -877,24 +1383,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--62
 
  []
 
-[3 <./Images/ReLuActivation.png>]
-<Images/Slide410.png, id=100, 725.71124pt x 508.14844pt>
+[17 <./Images/ReLuActivation.png>]
+<Images/Slide410.png, id=378, 725.71124pt x 508.14844pt>
 File: Images/Slide410.png Graphic file (type png)
 <use Images/Slide410.png>
 Package pdftex.def Info: Images/Slide410.png  used on input line 63.
 (pdftex.def)             Requested size: 525.23788pt x 367.78175pt.
-<Images/E43Architecture.png, id=101, 588.69937pt x 300.3722pt>
+<Images/E43Architecture.png, id=379, 588.69937pt x 300.3722pt>
 File: Images/E43Architecture.png Graphic file (type png)
 <use Images/E43Architecture.png>
 Package pdftex.def Info: Images/E43Architecture.png  used on input line 69.
 (pdftex.def)             Requested size: 525.23788pt x 267.99498pt.
-<Images/E43Sketchsigmoid.png, id=102, 642.14906pt x 147.55125pt>
+<Images/E43Sketchsigmoid.png, id=380, 642.14906pt x 147.55125pt>
 File: Images/E43Sketchsigmoid.png Graphic file (type png)
 <use Images/E43Sketchsigmoid.png>
 Package pdftex.def Info: Images/E43Sketchsigmoid.png  used on input line 75.
 (pdftex.def)             Requested size: 525.23788pt x 120.6911pt.
- [4 <./Images/OutputLayerSoftmax.png> <./Images/Slide410.png>]
-<Images/ProbabalisticFrameworkSupervisedLearning.png, id=110, 685.05937pt x 175
+ [18 <./Images/OutputLayerSoftmax.png> <./Images/Slide410.png>]
+<Images/ProbabalisticFrameworkSupervisedLearning.png, id=387, 685.05937pt x 175
 .40532pt>
 File: Images/ProbabalisticFrameworkSupervisedLearning.png Graphic file (type pn
 g)
@@ -902,13 +1408,57 @@ g)
 Package pdftex.def Info: Images/ProbabalisticFrameworkSupervisedLearning.png  u
 sed on input line 78.
 (pdftex.def)             Requested size: 525.23788pt x 134.49509pt.
+ [19 <./Images/E43Architecture.png> <./Images/E43Sketchsigmoid.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 83--101
 
-Overfull \hbox (98.30342pt too wide) in paragraph at lines 77--81
-\T1/ptm/b/n/12 Review chap-ter 3.4 [] 
  []
 
-[5 <./Images/E43Architecture.png> <./Images/E43Sketchsigmoid.png>]) [6 <./Image
-s/ProbabalisticFrameworkSupervisedLearning.png>]
+<Images/ProbabalisticWayCostFunction.png, id=394, 663.22781pt x 475.7775pt>
+File: Images/ProbabalisticWayCostFunction.png Graphic file (type png)
+<use Images/ProbabalisticWayCostFunction.png>
+Package pdftex.def Info: Images/ProbabalisticWayCostFunction.png  used on input
+ line 123.
+(pdftex.def)             Requested size: 525.23788pt x 376.80386pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--124
+
+ []
+
+[20 <./Images/ProbabalisticFrameworkSupervisedLearning.png>]
+<Images/SoftJaccardDiceLoss.png, id=402, 675.27281pt x 450.9347pt>
+File: Images/SoftJaccardDiceLoss.png Graphic file (type png)
+<use Images/SoftJaccardDiceLoss.png>
+Package pdftex.def Info: Images/SoftJaccardDiceLoss.png  used on input line 141
+.
+(pdftex.def)             Requested size: 525.23788pt x 350.75058pt.
+ [21 <./Images/ProbabalisticWayCostFunction.png>]
+<Images/GradientDescent.png, id=410, 689.57625pt x 364.36125pt>
+File: Images/GradientDescent.png Graphic file (type png)
+<use Images/GradientDescent.png>
+Package pdftex.def Info: Images/GradientDescent.png  used on input line 151.
+(pdftex.def)             Requested size: 525.23788pt x 277.52899pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--153
+
+ []
+
+[22 <./Images/SoftJaccardDiceLoss.png>]
+<Images/Training423.png, id=416, 762.59906pt x 559.33969pt>
+File: Images/Training423.png Graphic file (type png)
+<use Images/Training423.png>
+Package pdftex.def Info: Images/Training423.png  used on input line 160.
+(pdftex.def)             Requested size: 525.23788pt x 385.25348pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--162
+
+ []
+
+[23 <./Images/GradientDescent.png>]) [24 <./Images/Training423.png>]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
@@ -927,35 +1477,49 @@ Package minitoc(hints) Warning: W0024
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
-(./main.aux (./lecture2.aux))
+(main.aux (lecture1.aux) (lecture2.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 47ACCEC59CAA82C7DE92D3DFA2D10BF8;829.
+(rerunfilecheck)             Checksum: A61D88E5CD020D89262B64D6B780A63F;2740.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 14550 strings out of 480607
- 212883 string characters out of 5907502
- 531170 words of memory out of 5000000
- 29929 multiletter control sequences out of 15000+600000
- 563884 words of font info for 73 fonts, out of 8000000 for 9000
+ 15022 strings out of 480811
+ 230227 string characters out of 2891958
+ 539867 words of memory out of 3000000
+ 30395 multiletter control sequences out of 15000+200000
+ 564172 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,18n,46p,839b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fon
-ts/type1/urw/times/utmb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 807828 bytes).
+ 46i,18n,50p,841b,516s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/ba
+se/8r.enc}<C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmex10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Nicolas Hornek/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/
+Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Nicolas Hornek/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Nicolas 
+Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Nicolas Hornek/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Nico
+las Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/doublestroke/dsrom12.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nicolas Hor
+nek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/User
+s/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
+.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on main.pdf (28 pages, 4661483 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 453 words of extra memory for PDF output out of 10000 (max. 10000000)
 
