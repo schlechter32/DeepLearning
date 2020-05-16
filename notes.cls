@@ -1,7 +1,8 @@
 \ProvidesClass{notes}[2019/05/26 My custom notes]
-\LoadClass[12pt, a4paper]{report}
-
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\LoadClass[11pt, a5paper]{report}
+\usepackage{pgfpages}                                 % <— load the package
+\pgfpagesuselayout{2 on 1}[a4paper,landscape,border shrink=5mm] % <— set options
+\usepackage[left=0.5cm,top=0.5cm,right=0.5cm,bottom=0.5cm]{geometry}
 \usepackage[ansinew]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amssymb}
@@ -14,13 +15,13 @@
 \usepackage{xspace}
 \usepackage{csquotes}
 \usepackage{times}
-\usepackage{listings}
+%\usepackage{listings}
 \usepackage{color}
 \usepackage{caption}
 \usepackage{titlesec}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{tocloft}
-\usepackage{dsfont}
+\usepackage{adjustbox}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{2ex}
 \setcounter{secnumdepth}{2}
@@ -38,11 +39,11 @@
       \framebox{
         \vbox{
           \advance\textwidth by -0.22in
-          \hbox to \textwidth {{\Large \hfill Lecture #1: {#2} \hfill}}
+          \hbox to \textwidth {{\Large \hfill Chapter #1: {#2} \hfill}}
           \vspace{2mm}
           \hbox to \textwidth {\hfill Date: #3 \hfill}
           \vspace{2mm}
-          \hbox to \textwidth {{\it Lecturer: David Silver \hfill By: Nithish Moudhgalya}}
+          \hbox to \textwidth {{\it Lecturer:Bin Yang \hfill By: Nicolas Hornek}}
           }
         }
     \end{center}
@@ -58,12 +59,12 @@
     \addcontentsline{equ}{chapter}{\protect\numberline{\thechapter}#2}
 }
 
-\newcommand{\putfigure}[6]{
+\newcommand{\putfigure}[5]{
     \begin{minipage}{#1\textwidth}
     \centering
         \includegraphics[width=#2\textwidth,height=#3\textheight]{#4}
         \captionof{figure}{#5}
-        \label{#6}
+        
     \end{minipage}
 }
 
@@ -88,49 +89,48 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\footnotesize,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    keepspaces=true,
-    numbers=left,
-    numbersep=5pt,
-    showspaces=false,
-    showstringspaces=false,
-    showtabs=false,
-    tabsize=2
-}
-
+%\lstdefinestyle{mystyle}{
+%    backgroundcolor=\color{backcolour},
+%    commentstyle=\color{codegreen},
+%    keywordstyle=\color{magenta},
+%    numberstyle=\tiny\color{codegray},
+%    stringstyle=\color{codepurple},
+%    basicstyle=\footnotesize,
+%    breakatwhitespace=false,
+%    breaklines=true,
+%    captionpos=b,
+%    keepspaces=true,
+%    numbers=left,
+%    numbersep=5pt,
+%    showspaces=false,
+%    showstringspaces=false,
+%    showtabs=false,
+%    tabsize=2
+%}
 %%
 %% Julia definition (c) 2014 Jubobs
 %%
-\lstdefinelanguage{Julia}%
-  {morekeywords={abstract,break,case,catch,const,continue,do,else,elseif,%
-      end,export,false,for,function,immutable,import,importall,if,in,%
-      macro,module,otherwise,quote,return,switch,true,try,type,typealias,%
-      using,while},%
-   sensitive=true,%
-   alsoother={$},%
-   morecomment=[l]\#,%
-   morecomment=[n]{\#=}{=\#},%
-   morestring=[s]{"}{"},%
-   morestring=[m]{'}{'},%
-}[keywords,comments,strings]%
-
-\lstset{%
-    language         = Julia,
-    basicstyle       = \ttfamily,
-    keywordstyle     = \bfseries\color{blue},
-    stringstyle      = \color{magenta},
-    commentstyle     = \color{ForestGreen},
-    showstringspaces = false,
-}
+%\lstdefinelanguage{Julia}%
+%{morekeywords={abstract,break,case,catch,const,continue,do,else,elseif,%
+%		end,export,false,for,function,immutable,import,importall,if,in,%
+%		macro,module,otherwise,quote,return,switch,true,try,type,typealias,%
+%		using,while},%
+%	sensitive=true,%
+%	alsoother={$},%
+%	morecomment=[l]\#,%
+%	morecomment=[n]{\#=}{=\#},%
+%	morestring=[s]{"}{"},%
+%	morestring=[m]{'}{'},%
+%}[keywords,comments,strings]%
+%
+%\lstset{%
+%	language         = Julia,
+%	basicstyle       = \ttfamily,
+%	keywordstyle     = \bfseries\color{blue},
+%	stringstyle      = \color{magenta},
+%	commentstyle     = \color{ForestGreen},
+%	showstringspaces = false,
+%}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -169,13 +169,13 @@
 \newcommand{\wh}{\widehat}
 \newcommand{\wt}{\widetilde}
 
-% % "blackboard-fonted" letters for the reals, naturals etc.
-% \newcommand{\R}{\mathbb R}
-% \newcommand{\N}{\mathbb N}
-% \newcommand{\Z}{\mathbb Z}
-% \newcommand{\F}{\mathbb F}
-% \newcommand{\Q}{\mathbb Q}
-% \newcommand{\C}{\mathbb C}
+% "blackboard-fonted" letters for the reals, naturals etc.
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
 
 % % operators that should be typeset in Roman font
 % \newcommand{\poly}{\mathrm{poly}}
@@ -189,13 +189,13 @@
 % \newcommand{\NP}{\mathrm{NP}}
 % \newcommand{\BPP}{\mathrm{BPP}}
 % \newcommand{\DTIME}{\mathrm{DTIME}}
-% \newcommand{\ZPTIME}{\mathrm{ZPTIME}}
-% \newcommand{\BPTIME}{\mathrm{BPTIME}}
-% \newcommand{\NTIME}{\mathrm{NTIME}}
-
-% values associated to optimization algorithm instances
-\newcommand{\Opt}{{\mathsf{Opt}}}
-\newcommand{\Alg}{{\mathsf{Alg}}}
+% % \newcommand{\ZPTIME}{\mathrm{ZPTIME}}
+% % \newcommand{\BPTIME}{\mathrm{BPTIME}}
+% % \newcommand{\NTIME}{\mathrm{NTIME}}
+% 
+% % values associated to optimization algorithm instances
+% \newcommand{\Opt}{{\mathsf{Opt}}}
+% \newcommand{\Alg}{{\mathsf{Alg}}}
 \newcommand{\Lp}{{\mathsf{Lp}}}
 \newcommand{\Sdp}{{\mathsf{Sdp}}}
 \newcommand{\Exp}{{\mathsf{Exp}}}
@@ -273,10 +273,10 @@
 \newcommand{\z}{{\boldsymbol z}}
 \newcommand{\A}{{\boldsymbol A}}
 \newcommand{\B}{{\boldsymbol B}}
-\newcommand{\C}{{\boldsymbol C}}
+%\newcommand{\C}{{\boldsymbol C}}
 \newcommand{\D}{{\boldsymbol D}}
 \newcommand{\E}{{\boldsymbol E}}
-\newcommand{\F}{{\boldsymbol F}}
+%\newcommand{\F}{{\boldsymbol F}}
 \newcommand{\G}{{\boldsymbol G}}
 \renewcommand{\H}{{\boldsymbol H}}
 \newcommand{\I}{{\boldsymbol I}}
@@ -286,8 +286,8 @@
 \newcommand{\M}{{\boldsymbol M}}
 \renewcommand{\O}{{\boldsymbol O}}
 \renewcommand{\P}{{\mathbb{P}}}
-\newcommand{\Q}{{\boldsymbol Q}}
-\newcommand{\R}{{\boldsymbol R}}
+%\newcommand{\Q}{{\boldsymbol Q}}
+%\newcommand{\R}{{\boldsymbol R}}
 \renewcommand{\S}{{\boldsymbol S}}
 \newcommand{\T}{{\boldsymbol T}}
 \newcommand{\U}{{\boldsymbol U}}
@@ -295,7 +295,7 @@
 \newcommand{\W}{{\boldsymbol W}}
 \newcommand{\X}{{\boldsymbol X}}
 \newcommand{\Y}{{\boldsymbol Y}}
-\newcommand{\Z}{{\boldsymbol Z}}
+%\newcommand{\Z}{{\boldsymbol Z}}
 
 
 

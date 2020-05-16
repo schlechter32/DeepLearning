@@ -1,24 +1,26 @@
 \documentclass{notes}
 \usepackage[ngerman]{babel}
-\usepackage{pdfpages}
-\usepackage{minitoc}
-
+%\usepackage{minitoc}
+%\usepackage[toc]{multitoc}
 \begin{document}
 
-\includepdf{PDFs/Cover}
-\clearpage
-\renewcommand{\thepage}{\roman{page}}
-\setcounter{page}{1}
+%\includepdf{PDFs/Cover}
+%\clearpage
+%\renewcommand{\thepage}{\roman{page}}
+%\setcounter{page}{1}
 
-\dominitoc
+
 \tableofcontents
-\listoffigures
-\listofmyequations
 
 \clearpage
 \renewcommand{\thepage}{\arabic{page}}
 \setcounter{page}{1}
-\include{lecture1}
-\include{lecture2}
 
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+%\include{chapter6}
+	
 \end{document}
