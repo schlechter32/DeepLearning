@@ -42,3 +42,5 @@
 \BOOKMARK [1][-]{section.5.2}{Momentum method}{section.4.8}% 42
 \BOOKMARK [2][-]{subsection.5.2.1}{Nesterov Momentum}{section.5.2}% 43
 \BOOKMARK [1][-]{section.5.3}{5.3 Learning rate schedule}{section.4.8}% 44
+\BOOKMARK [1][-]{section.5.4}{Input and batch normalization}{section.4.8}% 45
+\BOOKMARK [2][-]{subsection.5.4.1}{E5.3 A Perceptron}{section.5.4}% 46

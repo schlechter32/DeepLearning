@@ -72,4 +72,116 @@ $\rightarrow$ Need a trade-off between \\
 \textbf{Adaptive schedules:}
 \textbullet different schedules for different parameters in $  \underline{\theta} $\\
 \textbullet $ \gamma^t  $ calculated dynamically depending on $ \underline{\theta}^t $ \\
-Slide 5-16 Adam very popular \\
+Slide 5-16 Adam very popular 
+\section{Input and batch normalization}
+\subsection{E5.3 A Perceptron}
+a) large offset : $  \x (n) = \underset{offset}{\x_0} + \tilde{\x} (n) , || \x _ 0 || >> \tilde{\x} (n) , \forall n  $\\
+$\rightarrow \underline{\underline{R}} \approx \x_0 \x_0^T ,$ rank one \\
+b) strongly different variances: e.g $  \x(n) = \left[ \begin{matrix}
+large \\
+small \\
+\vdots \\
+small
+\end{matrix} \right]  \sim \left[ \begin{matrix}
+1 \\
+0 \\
+\vdots \\
+0 
+\end{matrix} \right] = \e_1 , \forall n$ \\
+$\rightarrow \underline{\underline{R}} \sim \e, \e^T , $ rank one \\
+\textbf{AM:} $ \RR  $ has approximately rank one \\
+$\rightarrow  \RR $ has one large eigenvalue $  \lam_1 $ with eigenvector $  \v_1 = \x_0 $ or $ \v_1 \sim \e_1 $ and d-1 small eigenvalues\\
+$\rightarrow $ very narrow contour lines \\
+$ \rightarrow $ slow convergence (D2)\\
+\textbf{Need input normalization}, e.g.: zero-mean unit-variance normalization \\
+For each $  x_i(n)  = [ \x_0 (n)] _i, 1 \leq n \leq N$\\
+$  x_i(n) \leftarrow \dfrac{x_i (n)- \mu_i}{\sigma_i} $ with estimated mean $  \mu_i = \dfrac{1}{N} \sum_{n=1}^{N} x_i (n) $ \\
+variance $  \sigma_i^2 = \dfrac{1}{N-1} \sum_{n=1}^{N} (x_i (n) - \mu_i )^2 $ (N-1 because unbiased mean wanted)
+\textbullet normalization for the whole training set D \\
+\textbullet equally for all channels $ x_i $\\
+Advantage: \\
+\textbullet no ill conditioning (D2) \\
+\textbullet faster convergence 
+\subsection{Batch normalization}
+Input normalization: done once for the data set \\
+Hidden layers: data distribution changes\\
+\textbullet over layers  \\
+\textbullet over time during training 
+those to points are called internal covariate shift \\
+$ \rightarrow $ slower convergence  \\
+\textbf{Batch normalization(BN):} : like input normalization \\
+\textbullet for any hidden layer \\
+\textbullet for each mini batch of length B \\
+\putfigure{1.0}{1}{0.2}{Images/SketchMiniBatchNormalization}{Sketch for mini batch normalization } \\
+\putfigure{1.0}{1}{0.45}{Images/SummaryBatchNormalization}{Summary BN} \\
+\putfigure{1.0}{1}{0.45}{Images/SummaryBatchNormalization2.png}{Summary BN 2} 
+\section{Parameter initialization}	
+SGD does a local search: The solution depends on the initial value $  \theta ^0 $ \\
+$  \Theta ^0 = ?? $
+\textbf{2 Random onotialization of $ \W_L $} , e.g.
+\textbullet normal or Gaussian distribution $ N() $\\
+$ [ \W_L ]_{ij} \sim $ i.i.d (independent identically distributed) $  \sigma \cdot N(0,1) = N (0, \sigma^2)$\\
+\textbullet uniform distribution $  U(\cdot) $ \\
+$  [\W_L]_{ij} \sim  $ i.i.dl $  \sigma U(-1,1 ) = U(\sigma, \sigma) , \sigma = const, \forall l,i,j $ \\
+$ \rightarrow $ not optimal \\
+3) He initialization \\
+as 2) , but $ \delta_l \sim \dfrac{1}{\sqrt{M_{L-1}}} $  $ \rightarrow $ constant activation flow after initialization \\
+layer $  l $ : $ \a_l = \W_l \cdot \x _{l-1} + \b_{l} \overset {\b = \underline{0}}{=} \W_l \cdot \x_{l-1} $ or \\
+$  \a = \W \cdot \x , \\
+\a = [a_i] \in \R ^{M_l} $\\
+$  \W = [w_{ij}] \in \R^{M_l \times M_{l-1}} $\\
+$  \x = [x_i ] \in \R^{M_{l-1}} $\\
+	$ \rightarrow  a_i = \sum_{j=1}^{M_{l-1}} w_{ij} \cdot x_j$\\
+Assumptions:\\
+\textbullet $ x_i  $ i.i.d zero mean , variance $  \sigma_x^2 $ \\
+\textbullet $  w_{ij}  $  i.i.d zero mean , variance $  \sigma_w^2 $ \\
+\textbullet $  x_i  $ and $  w_{ij} $ independent \\
+$ \rightarrow $ \textbullet $  E(a_i) = \sum_{j}^{} E(w_{ij}) \cdot E(x _{ij} ) = 0$\\
+\textbullet $  Var(a_i)  = E(a_i^2) = E (\sum_j w_{ij} \cdot x_j )^2 = E(\sum_j \sum_k w_{ij} w_{ik} x_{j} x_{k} ) = \sum_j \sum_k E(w_{ij} w_{ik} \cdot E(x_j x_k))  = \sum_{j=1}^{M_{l-1}} \sigma_w^2 \cdot \sigma_x^2 = M_{l-1} \cdot  \sigma_w^2 \cdot \sigma_x^2 $\\
+\textbf{constant activation flow } $  \equiv  $ smooth information flow in the forward pass \\
+$ Var (a_i) = const. , \forall i,l  $\\
+$ \rightarrow \sigma_{w,l} \sim \dfrac{1}{\sqrt{M_{l-1}}}$, $ M_{l-1}:  $ fan-in\\
+\textbf{4) Glorot initialization }\\
+const. gradient flow in backward pass \\
+$ ||  \dfrac{\partial L }{\partial \a_l}|| = const, \forall l$ $ \rightarrow  \sigma_{w,l} \sim \dfrac{1}{\sqrt{M_l}}, M_l:$ fan-out\\
+compromise: $  \sigma_{w,l} \sim \dfrac{1}{\sqrt{M_{l-1} + M_l}} $
+\section{Improved (network)-model}
+A) Better activation functions $  \phi(\cdot) $, e.g. \\
+\textbullet ReLU instead of sigmoid \\
+\textbullet leaky reLu instead of ReLU\\
+\textbf{B) skip connections, shortcuts , residual network (ResNet)}\\
+\putfigure{1.0}{1}{0.45}{Images/LayerSkip}{Layerskip / shortcuts } \\
+\textbullet backward pass<. no vanishing gradient over identity path. \\
+$  \x_l = \phi_l (\W \x_{l-1} + \b_l )  + \x_{l-1}$\\
+$ \dfrac{\partial \x_l}{\partial \x_{l-1} = \dfrac{\partial \phi _l (\cdots)}{\partial \x_{l-1}}} + \II  $\\
+c) Many other architecture improvements see ch.10 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

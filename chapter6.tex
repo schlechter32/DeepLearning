@@ -1,0 +1,32 @@
+\mainsection{6}{Overfitting and regularization}{25/05/2020}
+\section{Model capacity and overfitting / underfitting}
+\putfigure{1.0}{1}{0.4}{Images/ModelFitting}{Model fitting curve}
+\section{Weight norm penalty}
+change on cost function: \\
+\textbullet old cost function: $ L(\underline{\theta}) $\\
+\textbullet New regularized cost function: $ L_r (\underline{\theta}) = L /\underline{\theta}  + \sum_{l=1}^{L} \lambda_i P(\W_L)$ \\
+$  \lambda \geq 0: $ regularized parameters \\
+$  P(\W_L) \geq 0 :  $ penalty terms, penalize $  \underline{\theta} $ with large $ P(\W_L) $\\
+$ \rightarrow  $ A compromise between $ \underset{\underline{\theta}}{min} L(\underline{\theta}) $ and the min $ \underset{\underline{\theta}}{min} P(\W_L) $\\
+$ \lam_L   $ determine the relative contributions of $  L(\underline{\theta}), P(\W_L) $. \\
+$  \lam_L = 0, \forall L  $ : no regularization \\
+common choice of $  P(\W_L) $: \\
+\textbullet a) l2-regularization: we use $ l_2-norm $ of $ vec(\W_L) $ \\
+$  P(\W_L) = || vec (\W_L ) ||^2_{2} = \sum_{i}^{} \sum_{j}^{} W_{L,ij}^2 \rightarrow $ prefer $ \underline{\theta} $ with small weight energy \\
+$\rightarrow$ better generalization, see E6.1\\
+Bias vector $ \b_l: $ no amplification effext of $ \x_{l-1} \rightarrow  $ no need for regularization \\
+\textbf{Mathematical analysis:}\\
+$  L_r (\underline{\theta}  ) = L(\underline{\theta}) + \lam || \underline{\theta} ||^2 $ for simplicity \\
+$ \underline{\nabla} L_r (\underline{\theta}) = \underline{\nabla} L(\underline{\theta}) + 2 \cdot \lam \underline{\theta} $ \\
+$ \underline{\theta}^{t+1} = \underline{\theta}^t - \gamma^t \underline{\nabla } L_r (\underline{\theta}^t) $ \\
+ $\underbrace{(1- 2 \lam \gamma^t)}_{0 << factor <1}  \underline{\theta}^t - \gamma^t \underline{\nabla} L(\underline{\theta}^t) $\\
+ l2-regularization leads to \textbf{weight decay } \\
+\textbf{ b) l1-regularization: } use l1-norm of $ vec(\W_L) $ \\
+$  P(\W_L) = || vec (\W_L) ||_1 = \sum_i \sum_j | W_{L,ij} | \\
+\rightarrow  $ prefer sparse $ \W_L $ with many zero elements\\
+\section{Early stopping}
+change on optimizer:\\
+\putfigure{1.0}{1}{0.2}{Images/StopTraining}{Early stopping} 
+\section{Data augmentation} 
+change on dataset, training with $ \infty $ many training data $\rightarrow$ no over fitting, in practice, training set is limited in size\\
+\textbf{data augmentation:} Generation of artificial realistic training samples: 

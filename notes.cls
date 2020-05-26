@@ -8,6 +8,7 @@
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{ulem}
 \usepackage{amsthm}
 \usepackage{latexsym}
 \usepackage{epsfig}
@@ -19,7 +20,7 @@
 \usepackage{color}
 \usepackage{caption}
 \usepackage{titlesec}
-\usepackage[hidelinks]{hyperref}
+%\usepackage[hidelinks]{hyperref}
 \usepackage{tocloft}
 \usepackage{adjustbox}
 \setlength{\parindent}{0em}
@@ -246,56 +247,58 @@
 \newcommand{\calZ}{{\cal Z}}
 
 % bold letters (useful for random variables)
-\renewcommand{\a}{{\boldsymbol a}}
-\renewcommand{\b}{{\boldsymbol b}}
-\renewcommand{\c}{{\boldsymbol c}}
-\renewcommand{\d}{{\boldsymbol d}}
-\newcommand{\e}{{\boldsymbol e}}
-\newcommand{\f}{{\boldsymbol f}}
-\newcommand{\g}{{\boldsymbol g}}
-\newcommand{\h}{{\boldsymbol h}}
-\renewcommand{\i}{{\boldsymbol i}}
-\renewcommand{\j}{{\boldsymbol j}}
-\renewcommand{\k}{{\boldsymbol k}}
-\newcommand{\m}{{\boldsymbol m}}
-\newcommand{\n}{{\boldsymbol n}}
-\renewcommand{\o}{{\boldsymbol o}}
-\newcommand{\p}{{\boldsymbol p}}
-\newcommand{\q}{{\boldsymbol q}}
-\renewcommand{\r}{{\boldsymbol r}}
-\newcommand{\s}{{\boldsymbol s}}
-\renewcommand{\t}{{\boldsymbol t}}
-\renewcommand{\u}{{\boldsymbol u}}
-\renewcommand{\v}{{\boldsymbol v}}
-\newcommand{\w}{{\boldsymbol w}}
-\newcommand{\x}{{\boldsymbol x}}
-\newcommand{\y}{{\boldsymbol y}}
-\newcommand{\z}{{\boldsymbol z}}
-\newcommand{\A}{{\boldsymbol A}}
-\newcommand{\B}{{\boldsymbol B}}
-%\newcommand{\C}{{\boldsymbol C}}
-\newcommand{\D}{{\boldsymbol D}}
-\newcommand{\E}{{\boldsymbol E}}
-%\newcommand{\F}{{\boldsymbol F}}
-\newcommand{\G}{{\boldsymbol G}}
-\renewcommand{\H}{{\boldsymbol H}}
-\newcommand{\I}{{\boldsymbol I}}
-\newcommand{\J}{{\boldsymbol J}}
-\newcommand{\K}{{\boldsymbol K}}
-\renewcommand{\L}{{\boldsymbol L}}
-\newcommand{\M}{{\boldsymbol M}}
-\renewcommand{\O}{{\boldsymbol O}}
+\renewcommand{\a}{{\underline a}}
+\renewcommand{\b}{{\underline b}}
+\renewcommand{\c}{{\underline c}}
+\renewcommand{\d}{{\underline d}}
+\newcommand{\e}{{\underline e}}
+\newcommand{\f}{{\underline f}}
+\newcommand{\g}{{\underline g}}
+\newcommand{\h}{{\underline h}}
+\renewcommand{\i}{{\underline i}}
+\renewcommand{\j}{{\underline j}}
+\renewcommand{\k}{{\underline k}}
+\newcommand{\m}{{\underline m}}
+\newcommand{\n}{{\underline n}}
+\renewcommand{\o}{{\underline o}}
+\newcommand{\p}{{\underline p}}
+\newcommand{\q}{{\underline q}}
+\renewcommand{\r}{{\underline r}}
+\newcommand{\s}{{\underline s}}
+\renewcommand{\t}{{\underline t}}
+\renewcommand{\u}{{\underline u}}
+\renewcommand{\v}{{\underline v}}
+\newcommand{\w}{{\underline w}}
+\newcommand{\x}{{\underline x}}
+\newcommand{\y}{{\underline y}}
+\newcommand{\z}{{\underline z}}
+\newcommand{\A}{{\underline A}}
+\newcommand{\B}{{\underline B}}
+%\newcommand{\C}{{\underline C}}
+\newcommand{\CC}{{\uuline C}}
+\newcommand{\II}{{\uuline I}}
+\newcommand{\D}{{\underline D}}
+\newcommand{\E}{{\underline E}}
+%\newcommand{\F}{{\underline F}}
+\newcommand{\G}{{\underline G}}
+\renewcommand{\H}{{\underline H}}
+\newcommand{\I}{{\underline I}}
+\newcommand{\J}{{\underline J}}
+\newcommand{\K}{{\underline K}}
+\renewcommand{\L}{{\underline L}}
+\newcommand{\M}{{\underline M}}
+\renewcommand{\O}{{\underline O}}
 \renewcommand{\P}{{\mathbb{P}}}
-%\newcommand{\Q}{{\boldsymbol Q}}
-%\newcommand{\R}{{\boldsymbol R}}
-\renewcommand{\S}{{\boldsymbol S}}
-\newcommand{\T}{{\boldsymbol T}}
-\newcommand{\U}{{\boldsymbol U}}
-\newcommand{\V}{{\boldsymbol V}}
-\newcommand{\W}{{\boldsymbol W}}
-\newcommand{\X}{{\boldsymbol X}}
-\newcommand{\Y}{{\boldsymbol Y}}
-%\newcommand{\Z}{{\boldsymbol Z}}
+%\newcommand{\Q}{{\underline Q}}
+\newcommand{\RR}{{\uuline R}}
+\renewcommand{\S}{{\underline S}}
+\newcommand{\T}{{\underline T}}
+\newcommand{\U}{{\underline U}}
+\newcommand{\V}{{\underline V}}
+\newcommand{\W}{{\uuline W}}
+\newcommand{\X}{{\underline X}}
+\newcommand{\Y}{{\underline Y}}
+%\newcommand{\Z}{{\underline Z}}
 
 
 
