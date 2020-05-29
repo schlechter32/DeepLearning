@@ -30,3 +30,38 @@ change on optimizer:\\
 \section{Data augmentation} 
 change on dataset, training with $ \infty $ many training data $\rightarrow$ no over fitting, in practice, training set is limited in size\\
 \textbf{data augmentation:} Generation of artificial realistic training samples: 
+\section{Ensamble learning}
+change dataset / model / cost function /  optimizer\\
+\putfigure{1.0}{1}{0.4}{Images/EnsembleLearning}{Ensamble learning explained} 
+\section{Dropout}
+change on model \\
+An implicit ensemble method\\
+\putfigure{1.0}{1}{0.4}{Images/DropOut}{Dropout explained} 
+\section{Hyperparameter optimization}
+\putfigure{1.0}{1}{0.4}{Images/HyperParametersExplained}{Hyperparameters explained} \\
+Solution for b): Use validation data set D\\
+up to now separating dataset in 2 for training and test, but now split in three parts training set $ D_{train} $ (large). test set $ D_{test} $(small) and validation set $ D_{val} $ (small, same size as test)\\
+\putfigure{1.0}{1}{0.4}{Images/TrainingTestValidationSet}{Summary of data sets} \\
+\textbf{Training:} $ \underline{\theta} $ and hyperparameter and $ \underline{\eta} $\\
+for $ \underline{\eta} = ..... $ learn $ \underline{\theta} $ of $ f(\x ; \underline{\theta} ; \underline{\eta}) $ frpm $  D_{train} $\\
+calculate validation error $ (\underline{\eta}) $ on $ D_{val} $\\
+min validation error ($ \underline{\eta} $)\\
+calculate test error of $ f(\x ; \underline{\theta} ; \underline{\eta}) $ on $ D_{test} $\\
+\putfigure{1.0}{1}{0.4}{Images/OptimizeHyperparameters}{Approaches to optimize hyperparameters} \\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

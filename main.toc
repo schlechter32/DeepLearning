@@ -51,3 +51,8 @@
 \contentsline {chapter}{\numberline {6}Overfitting and regularization}{43}%
 \contentsline {section}{\numberline {6.1}Model capacity and overfitting / underfitting}{43}%
 \contentsline {section}{\numberline {6.2}Weight norm penalty}{43}%
+\contentsline {section}{\numberline {6.3}Early stopping}{45}%
+\contentsline {section}{\numberline {6.4}Data augmentation}{45}%
+\contentsline {section}{\numberline {6.5}Ensamble learning}{45}%
+\contentsline {section}{\numberline {6.6}Dropout}{45}%
+\contentsline {section}{\numberline {6.7}Hyperparameter optimization}{47}%

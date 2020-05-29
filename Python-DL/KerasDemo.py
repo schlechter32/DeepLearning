@@ -3,6 +3,7 @@ import keras
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense
+from keras.layers import Conv2D
 from keras import optimizers
 #%% Constants
 
@@ -23,3 +24,9 @@ sgd=optimizers.SGD(lr=0.1,momentum=0.0,decay=0.0, nesterov=0.9)
 model.compile(loss='categorical_crossentropy', optimizer=sgd,metrics=['accuracy'])
 history=model.fit(x_train,y_train,batch_size=256, epochs=60,verbose=1,validation_data=(x_test,y_test))
 #%% Next cell
+model = Sequential()
+model.add(Conv2D(filters=8,kernel_size=(5,5),activation = 'relu', kernel_initializer='glorot_uniform',bias_initializer='zeros' ))
+model.add(Conv2D(filters =16,kernel_size=(5,5),activation = 'relu', kernel_initializer='glorot_uniform',bias_initializer='zeros' ))
+model.add(Dense(128, activation ='relu'))
+sgd2=optimizers.SGD(lr=0.1,momentum=0.0,decay=0.0, nesterov=0.9)
+model.compile(loss='categorical_crossentropy', optimizer=sgd2,metrics=['accuracy'])
