@@ -3,11 +3,13 @@ Dear Student,
 
 for understanding how batch operations work you have to think about how the data is typically stored in tensors for processing. Contrary to the notation that is often used in the literature, the input examples x are typically stored as row vectors in a matrix X. This means that if you have 10 input examples each being a vector of length 784, they will be stored in a matrix X of size 10x784.
 
-If you want to implement a dense layer with 100 neurons, you then have to apply an affine mapping followed by the activation function a(). Fot the implementation this means that you input the matrix X with size 10x784 into the layer and as an output you want a matrix Y with size 10x100. The output of the layer is then calculated as Y=a(XW+B). In order for this operation to be defined the shapes of the matrices have to match. Here is the same operation with the shapes of the operands in brackets: Y[10x100]=a(X[10x784]W[784x100]+B[10x100]) As you can see the shapes match and the overall function is defined. This might be confusing to you, since we are using row instead of column vectors but this allows for the batch dimension to be the first dimension and as far as I know all major DL frameworks like Tensorflow and Pytorch implement layers that expect the first dimension to be the batch dimension.
+If you want to implement a dense layer with 100 neurons, you then have to apply an affine mapping followed by the activation function a(). Fot the implementation this means that you input the matrix X with size 10x784 into the layer and as an output you want a matrix Y with size 10x100. The output of the layer is then calculated as Y=a(XW+B). In order for this operation to be defined the shapes of the matrices have to match. Here is the same operation with the shapes of the operands in brackets:\\ Y[10x100]=a(X[10x784]W[784x100]+B[10x100]) As you can see the shapes match and the overall function is defined. This might be confusing to you, since we are using row instead of column vectors but this allows for the batch dimension to be the first dimension and as far as I know all major DL frameworks like Tensorflow and Pytorch implement layers that expect the first dimension to be the batch dimension. \\
 
-Hint: In Numpyand Tensorflow broadcasting is available (https://numpy.org/doc/stable/user/basics.broadcasting.html?highlight=broadcasting), so if you add the bias you dont have to use a matrix B of size 10x100. You can just add a vector of size 100.
+Hint: In Numpy and Tensorflow broadcasting is available\\ (https://numpy.org/doc/stable/user/basics.broadcasting.html?highlight=broadcasting),\\
+ so if you add the bias you dont have to use a matrix B of size 10x100. You can just add a vector of size 100.
 
 So to summarize: You just have to work with row vectors and not with column vectors. I hope this is helpful for you.
 
 With best regards,
-Felix Wiewel
+Felix Wiewel                                                                                                                                                                                                                                                                                                                                            
+                              

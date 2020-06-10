@@ -272,7 +272,7 @@
 \newcommand{\x}{{\underline x}}
 \newcommand{\y}{{\underline y}}
 \newcommand{\z}{{\underline z}}
-\newcommand{\A}{{\underline A}}
+\newcommand{\A}{{\uuline A}}
 \newcommand{\B}{{\underline B}}
 %\newcommand{\C}{{\underline C}}
 \newcommand{\CC}{{\uuline C}}
@@ -296,7 +296,7 @@
 \newcommand{\U}{{\underline U}}
 \newcommand{\V}{{\underline V}}
 \newcommand{\W}{{\uuline W}}
-\newcommand{\X}{{\underline X}}
+\newcommand{\X}{{\uuline X}}
 \newcommand{\Y}{{\underline Y}}
 %\newcommand{\Z}{{\underline Z}}
 

@@ -1,0 +1,89 @@
+\mainsection{7}{Convolutional neural networks (CNN)}{10/06/2020}
+ch. 4: dense networks \\
+\textbullet consisting of dense layers only \\
+\textbullet but rarely used. CNN widely used.\\
+\textbf{Why?}\\
+\textbullet Drawbacks on slide 7-1\\
+Solution: CNN, consisitng of many convolutional layers, based on convolution operation\\
+\textbullet good for local feature learning\\
+\textbullet more efficent, i.e. low complexity
+\section{Convlutional layer} 
+supports various datatypes:\\
+\begin{tabular}{lcc}
+input data type:  &$  \X_{l-1}, \A_l ; \X_l$ &$ \W_l$ \\
+1D signal waveform & 2D matrix & 3D tensor\\
+2D image & 3D tensor & 4D tensor\\
+3D data cube (ct image ) & 4D tensor & 5D tensor\\
+\end{tabular}\\
+One dimension more: multiple input/output signals/images/feature maps/channels\\
+e.g. RGB: 3 times 2D images $ \rightarrow $ 3D tensor \\
+\textbf{2D convolutional layer l:}\\
+Dimension refers to input data shape \\
+$ \X_{l-1}  \rightarrow \begin{matrix}
+\W_l \\
+b_l \\
+\phi_l 
+\end{matrix} \rightarrow \X_l$\\
+\textbullet input tensor $  \X_{l-1} , M_{l-1 }  \times N_{l-1} \times D _{l-1 }$
+\\
+$ D_{l-1}$(channel depth ) 2D feature maps of size $ M_{l-1} \times N_{l-1 }   $ \\
+\textbullet output tensor $  \X_l , M_l \times N_l \times D_l , \X_l = \phi_l (\A_l ) $
+$ D_l   $ 2D feature maps of size $  M_l \times N_l $
+\textbullet Kernel tensor: $ \W_l , K_l \times K_l \times D_{l-1 } \times D_l  $\\
+$ K_l:  $ kernel width:
+$ D_l  $ 3D impuls responses/ filters /kernels of the size $  K_l \times K_l \times D_{l-1} $\\
+\textbullet bias vector: $  b_l , D_l \times 1  $ \\
+one bias for one output channel\\
+\textbullet activation tensor: $  \A_l , M_l \times N_l \times D_l  $\\
+$ [\A _l ] _{mno} = \sum_{i=1 }^{K_l } \sum_{j=1}^{K_l} \sum_{d=1 }^{D_{l-1}} [\W_l ] _{ijdo} \cdot [\X_{l-1}]_{m+i-1 , n+j-1,d} + [\b_l ]_o$ \\
+index (mno, i=1, j=1 , ij, m+i-1, n+j-1 ) spatial correlation, called convolution in CNN \\
+index (d=1 , d) sum of all input feature maps\\
+index (o,o,o): one of $ D_l  $ output channel\\
+$  1 \leq m \leq M_l = M_{l-1 } - K_l + 1  $\\
+$  1 \leq n \leq N_l = N_{l-1 } K_l +1  $\\
+$  1 \leq o \leq D_l $ \\
+ output size reduced by $  K_l -1  $ in each dimension \\
+\textbullet $  \phi_l (\cdot):  $ activation function elementwise \\
+\putfigure{1.0}{1}{0.4}{Images/CNNLayerVisu}{Visualization of CNN layer} 
+\subsection{Properties of convolutional layer}
+Typical kernel size $  K_l \times K_l  : 3 \times 3,  5 \times 5 , ... m $ but also $  1 \times 1  $\\
+typical number of input channels $  D_l :  $ $  1 \sim 10 \sim 100  $\\
+Number of parameters: \\
+$ N_{p,l } =\underbrace{ K_l ^2 D_{l-1} D_l}_{\W_l} +\underbrace{ D_l}_{\b_l} \approx K_l ^2 D_{l-1 } D_l $
+quite small, independent on input size $  M_{l-1} \times N_{l-1 } $\\
+Number of multiplications:\\
+$  N_{x,l} = \underbrace{M_l \cdot N_l \cdot D_l}_{ \text { elem in } \A}  \cdot K_l K_l D_{l-1} \approx M_l N_l N_{p,l} $, quite large , depends on input size.\\
+\textbullet p1) sparse connection: \\
+\putfigure{1.0}{1}{0.4}{Images/IluSparseConnection}{Illusatration sparse connection} \\
+small receptive field: $  K_l or K_l \times K_l  \equiv $ focus on local input patterns\\
+in DNN:
+\putfigure{1.0}{1}{0.4}{Images/receptiveField}{Illustraion receptive field } \\
+a neuron in layer l has te receptive field width : $  K_l +, ... ,+ K_l - (l-1) $  for the input layer\\
+i.e. a neuron in a deep layer (l $  \uparrow  $) can still be indirectly connected to all input neuron \\
+p2) parameter sharing: the same kernel for all output neurons \\
+\textbullet p1) + p2) give the following advanteges \\
+\textbullet reduced computational complexity reduced memory complexity \\
+\textbullet reduced model capacity and reduced overfitting\\
+\textbullet p3) translation - equivariant $  \equiv  $ shift-invariant \\
+translation /shift of $  \X_{l-1} \rightarrow  $ same translation/shift of $ \X_l $\\
+\textbullet p4) one channel/feature-map contains only one feature, e.g. only horizontal edges \\
+$ \rightarrow $ need multiple channels/feature maps ($ D_l > 1  $) \\
+\textbullet p5) $  M_l = M_{l-1 }  - K_l + 1 :  $ images become smaller.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -56,3 +56,6 @@
 \contentsline {section}{\numberline {6.5}Ensamble learning}{45}%
 \contentsline {section}{\numberline {6.6}Dropout}{45}%
 \contentsline {section}{\numberline {6.7}Hyperparameter optimization}{47}%
+\contentsline {chapter}{\numberline {7}Convolutional neural networks (CNN)}{51}%
+\contentsline {section}{\numberline {7.1}Convlutional layer}{51}%
+\contentsline {subsection}{\numberline {7.1.1}Properties of convolutional layer}{51}%
