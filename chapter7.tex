@@ -69,17 +69,113 @@ translation /shift of $  \X_{l-1} \rightarrow  $ same translation/shift of $ \X_
 \textbullet p4) one channel/feature-map contains only one feature, e.g. only horizontal edges \\
 $ \rightarrow $ need multiple channels/feature maps ($ D_l > 1  $) \\
 \textbullet p5) $  M_l = M_{l-1 }  - K_l + 1 :  $ images become smaller.
-
-
-
-
-
-
-
-
-
-
-
+\section{Modified convolutions}
+to:\\
+\textbullet reduce complexity \\
+\textbullet increase the receptive field\\
+\textbullet ... \\
+\textbf{Minor modifications }\\
+\textbullet Padding slide 7-9 \\
+\textbullet Stride slide 7-10  
+\textbullet Dilated convolution slide 7-11\\
+\textbf{outputsize:} \\
+Standard $ M_l = M_{l-1 } - K_l + 1   $\\
+including all modifications:\\
+$ P \geq 0:  $ padding , 0 \\
+$ s \geq 1:  $ stride, 1 \\
+$ D\geq 1 :  $ dilation , 1 \\
+$ \left\lfloor \dfrac{M_{l-1} + 2P - (K_l -1) D-1}{S} \right\rfloor +1 $\\
+Major modifications on $ \W_l $
+\textbullet Standard convolution using padding:\\
+$  M \times N \times D_{l-1} \underset{\rightarrow}{K \times \times K \times D_{l-1} \times D_l}  M \ times N \times D_l$ \\
+3D joint spatial-channnel processing $  \sum_i \sum _j \sum_d  $\\
+$ \rightarrow $ high complexity $  N_{x,1} = MNK^2 D_{l-1 } D_l  $
+To reduce the complexity:\\
+\textbullet $  1 \times 1  $ convolution, i.e. K=1 Slide 7-12\\
+\textbullet additional higher nonlinearity due to additional $ \phi(\cdot) $\\
+Idea: replace 1 layer of standard convolution by 2 layers of simpler convolutions\\
+\textbullet $ M \times N \times D_{l-1 } \overset{1 \times 1 \times D_{l-1 } \times \bar{D} _{l-1 } }{\longrightarrow} M \times N \times \bar{D}_{l-1 } , \bar{D}_{l-1} < D_{l-1 }$\\
+\textbullet $  M \times N \times \bar{D}_{l-1 } \overset{K \times K \times \bar{D}_{l-1 } \times D_l}{\longrightarrow} M \times N \times D_l $
+$ N_{x,2 } = MN- 1^2 \cdot D_{l-1} + \bar{D}_{l-1 } + MN \cdot K^2 \cdot \bar{D}_{l-1} D_l $\\
+$ \rightarrow $ $ \dfrac{N_{x,2}}{N_{x,1}} = \dfrac{D_{l-1}}{K^2 D_l} + \dfrac{\bar{D}_{l-1}}{D_{l-1}} \approx \dfrac{\bar{D}_{l-1}}{D_{l-1}} < 1 $\\
+\textbf{\textbullet depth-wise separable convolution:}\\
+separable spatial (2D) and channel (1D) processing \\
+\textbullet $ M \times N \times D_{l-1} \overset{K \times K \times 1 \times D_{l-1} }{\longrightarrow} M \times N \times D_{l-1}  $ \\
+depth wise (2D) convolution for each channel \\
+\textbullet $  M \times N \times D_{l-1} \overset {1 \times 1 \times D_{l-1} \times D_L}{\longrightarrow} M \times N \times D_l  $ point wise (1D) convolution = $  1 \times 1  $ convolution \\
+$  N_{x,3 } = MNK^2 \cdot 1 \cdot D_{l-1 } + MN \cdot 1^2 \cdot D_{l-1 } D_l  $\\
+$  \dfrac{N_{x,3}}{N_{x,1} } = \dfrac{1}{D_l } \dfrac{1}{K_l^2} \approx \dfrac{1}{K_l^2}  $ for $  D_l >> K_l ^2 $\\
+\textbullet Comparison Slide 7-13
+\section{Pooling and unpooling layer}
+2D \textbf{pooling layer} with  stride $  s \in \N $\\
+\putfigure{1.0}{1}{0.4}{Images/PoolingLayerVisu}{pooling layer visualization}\\
+\textbullet max pooling: $ p = max() $ of a,b,c,...\\
+\textbullet mean pooling $ p= mean () $ of a,b,c,...\\
+\textbullet l2-norm pooling: $ p= l_2-norm $ of a,b,c,...\\
+widely used; 2x2 max pooling with s=2 \\
+Nonlinear operation\\
+Effects explained on slide 7-15\\
+\textbf{2D unpooling layer} e.g. 2x2 \\
+Corresponds to upsampling:\\
+$ a \rightarrow \left[ 
+\begin{matrix}
+	a & a\\
+	a & a 
+\end{matrix}
+\right] $\\
+upsampling to restore the original image after size pooling
+\section{Deconvolutional layer}
+deconvolutional layer  $  \neq $ deconvolution, bad name \\
+other names= fractionally strided convolution or transposed convolution or learnable upsample\\
+\textbf{Goals:}\\
+\textbullet replaces unpooling layer \\
+\textbullet increase image resolution without changing the object shape in the image \\
+\textbf{deconvolutional layer}\\
+\textbullet zero insertion \\
+\textbullet convolution (smoothing) with learnable kernel\\
+\begin{tabular}{ccc}
+	&\textbf{ in deep learning} & \textbf{in signal processing}\\
+$ \X_{l-1} , \X_l  $ & feature maps & input/output signal\\
+$  \W_l  $ & kernel & impulse response \\
+ $ \sum_{i} \sum_j w _{ij} x_{m+i, n+j}   $ & convolution & correlation \\
+ $  x(n-n_0 ) \rightarrow y (n-n_0) $ & translation-equivariant & shift-invariant \\
+ $  x(n-n_0 ) \rightarrow y(n) $ & translation-invariant & - \\
+ & padding & zero initialization \\
+  & stride & downsampling of output \\
+  & dilated convolution & polyphase downsampling of input \\
+  reverse convolution & - & deconvolution \\
+   & deconvolutional layer & lernable upsampling
+\end{tabular}
+\section{Flatten layer}
+$ \X \in \R^{M \times N \times D}  $ flatten returns long single column $ vec(\X) \in \R^{MND} $\\
+as an interface between convolutional layers and dense layers \\
+%\putfigure{1.0}{1}{0.4}{Images/file}{Visualization flaten layer}
+conv. layer(feature learning) $ \rightarrow $ $\left[ \begin{matrix}
+\\
+\\
+\\
+\\
+\end{matrix} \right] \rightarrow$  dense layer $ \rightarrow $ output layer (combine and interpret high-level features and make decisions in the output layer)
+\section{Global average pooling layer}
+\textbf{GAP}: efficient alternative for flatten layer \\
+$  \X = [x_{ij}] \in \R^{M \times N \times D} \rightarrow GAP \rightarrow \left[ \dfrac{1}{MN} \sum_{i=1}^{M} \sum_{j=1}^{N} x_{ijd} \right]   _{1 \leq d \le D} \in \R^D$\\
+\textbullet reduche each feature map/channel to a single value \\
+\textbullet as an interface between convolutional and dense layers like the flatten layer\\
+\textbullet much less coefficients/parameters for the dense layer after the GAP layer\\
+\textbullet suitable for large DNN: reduce complexity
+\section{Architecture of CNNs}
+A CNN consists of typically \\
+\textbullet convolutional layers \\
+\textbullet optional max pooling layers \\
+both types are used for hierarchical feature learning \\
+\textbullet flatten or GAP layer to change the type of layer from convolutional to dense layer to make a decision \\
+\textbullet dense layers for final classification or regression \\
+\textbullet unpooling or deconvolutional layer is used for image segmentation to get the same output size as the input \\
+Examples on slide 7-19 following.\\
+Why deep CNN?\\
+\textbullet large model capacity for difficult tasks\\
+\textbullet multi-level (hierarchical) representation / features of the input image \\
+\putfigure{1.0}{1}{0.4}{Images/VisuFeaturesHierarchy}{Visualization deep CNN} \\
 
 
 

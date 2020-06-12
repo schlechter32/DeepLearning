@@ -59,3 +59,7 @@
 \contentsline {chapter}{\numberline {7}Convolutional neural networks (CNN)}{51}%
 \contentsline {section}{\numberline {7.1}Convlutional layer}{51}%
 \contentsline {subsection}{\numberline {7.1.1}Properties of convolutional layer}{51}%
+\contentsline {section}{\numberline {7.2}Modified convolutions}{53}%
+\contentsline {section}{\numberline {7.3}Pooling and unpooling layer}{55}%
+\contentsline {section}{\numberline {7.4}Deconvolutional layer}{55}%
+\contentsline {section}{\numberline {7.5}Flatten layer}{55}%

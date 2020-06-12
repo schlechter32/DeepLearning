@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  10 JUN 2020 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  12 JUN 2020 12:29
 entering extended mode
 **./main.tex
 (main.tex
@@ -1499,69 +1499,75 @@ File: Images/receptiveField.png Graphic file (type png)
 Package pdftex.def Info: Images/receptiveField.png  used on input line 60.
 (pdftex.def)             Requested size: 392.66211pt x 227.62119pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--69
+Underfull \hbox (badness 10000) in paragraph at lines 49--72
 
  []
 
 
-Overfull \hbox (41.52205pt too wide) in paragraph at lines 49--69
+Overfull \hbox (41.52205pt too wide) in paragraph at lines 49--72
 \T1/ptm/m/n/10.95 in DNN:  $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--69
+Underfull \hbox (badness 10000) in paragraph at lines 49--72
 
  []
 
 [51
 
 
- <./Images/CNNLayerVisu.png>])
+ <./Images/CNNLayerVisu.png>]
+<Images/PoolingLayerVisu.png, id=201, 396.7322pt x 348.55219pt>
+File: Images/PoolingLayerVisu.png Graphic file (type png)
+<use Images/PoolingLayerVisu.png>
+Package pdftex.def Info: Images/PoolingLayerVisu.png  used on input line 111.
+(pdftex.def)             Requested size: 392.6571pt x 227.61992pt.
+ [53 <./Images/IluSparseConnection.png> <./Images/receptiveField.png>])
 \openout2 = `IntroductionToTensofFlow.aux'.
 
  (IntroductionToTensofFlow.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [53 <./Images/IluSparseConnection.png> <./Images/receptiveField.png>]
-[54
+) [55 <./Images/PoolingLayerVisu.png>] [56
 
 
-] (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux)
-(chapter5.aux) (chapter6.aux) (chapter7.aux) (IntroductionToTensofFlow.aux)) ) 
+] (main.aux (chapter1.aux)
+(chapter2.aux) (chapter3.aux) (chapter4.aux) (chapter5.aux) (chapter6.aux)
+(chapter7.aux) (IntroductionToTensofFlow.aux)) ) 
 Here is how much of TeX's memory you used:
- 16357 strings out of 480811
- 299081 string characters out of 2891958
+ 16367 strings out of 480811
+ 299328 string characters out of 2891958
  560358 words of memory out of 3000000
- 31888 multiletter control sequences out of 15000+200000
- 563893 words of font info for 73 fonts, out of 3000000 for 9000
+ 31896 multiletter control sequences out of 15000+200000
+ 564204 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,86p,962b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
-{
-C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/
-8r.enc}<C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Nicolas Hornek/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Use
-rs/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Nicolas Hornek
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
-Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Nicolas Hornek/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Nicolas H
-ornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Nicolas Hornek/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Nicolas 
-Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 7621943 bytes).
+{C:/Users/Nicolas Hornek/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Nicolas Horne
+k/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Nicolas Hornek/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Nicola
+s Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Nicolas Hornek/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ni
+colas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy6.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nicolas Horn
+ek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
+/times/utmb8a.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/urw/times/utmr8a.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (29 pages, 7691141 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
+ 262 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
