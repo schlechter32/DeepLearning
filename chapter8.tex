@@ -1,0 +1,67 @@
+\mainsection{8}{Reccurent/recursive neural networks (RNN)}{15/06/2020}
+NN with feedback.\\
+Dense network(ch. 4) and CNN(ch. 7): feedforward
+\section{Recruent layer and recurrent neural network}
+\textbf{Recurrent layer: }l: $ M_l $ recurrent neurons\\
+$x_{l-1} (n) \rightarrow  \left[\begin{matrix}
+\W_{l,x }\\
+W_{l,s} \\
+\b_l 
+\end{matrix} \right]  \rightarrow x_l(n) = \s_l (n :)$ state \\
+\putfigure{1.0}{1}{0.4}{Images/RecurrentLayer}{Recurrent layer visualization}\\
+$ n= 1,2, ..., B: $ time index in one minibatch \\
+$  x_{l-1}(n ) \in \R_{M_l -1 }:  $ input at time $  n $\\
+$ \a_l (n) = \W _{l,x } \cdot \x_{l-1 } (n) + \W_{l,s} \sl n-1    + \b_l \in \R_{M_l} $: activation\\
+$ \W_{l,x } \in \R _{M_l \times M_{l-1 }} , \W_{l,s } \in \R ^{M-l \times M_l } : $ weight matrices \\
+$  \b_l \in \R^{M_l } $ : bias \\
+ $ \x_l (n) = \s_l (n) = \phi_l (\a_l (n)) \in \R ^{M_l } $: output, memory state \\
+ $  \phi_l (\cdot ) $ activation function \\
+ $  \s_l  (0 ) $ : initial value, often zero \\
+ $  \equiv  $ first order recursive nonlinear filter for vector signal\\
+ \begin{tabular}{lr}
+ 	$ \W_{l,s} = 0 $ & $  \phi_l(a) = a  $\\
+ 	feedforward dense layer & linear first oder recursive filter IIR(1,0)
+ \end{tabular}\\
+often:\\
+\textbullet $  \W _{l,x } $ full matrix $  \equiv  $ dense layer \\
+\textbullet $    \W_{l,1 } $ diagonal $  \equiv  $ single neuron feedback\\
+Visu on Slide 8-6\\
+\textbf{Recurent neural netwrok (RNN)}\\
+at least one recurrent layer. \\
+Training of RNN:\\
+\textbullet SGD: $  \underline{\Theta}^{t+1}   = \underline{\Theta}^{t}  - \gamma ^t \underline{\nabla}L (t ; \underline{\Theta} ) | _{\underline{\Theta}^{} = \underline{\Theta}^{t}  } $\\
+\textbullet backpropagation of derivatives thorugh layers \\
+\textbullet for a parameter $  \theta  $ of a recurrent lyer: additional backpropagation through time (BPTT) $  \equiv  $ backpropagation throught unfoldet graph along the time axis \\
+$  \equiv $ chain rule and product rule of derivative \\
+$  \dfrac{\partial (f (\theta ) \cdot g (\theta))}{\partial \theta } $\\
+\textbullet Slide 8-10 $  \W_2 $ is wrong before loss
+\section{Bididrectional recurrent neural network(BRNN)}
+\putfigure{1.0}{1}{0.4}{Images/GraphBRnn}{Graph BRNN} \\
+\putfigure{1.0}{1}{0.4}{Images/UnfoldedGraphBRNN}{Unfolded graph BRNN} \\
+Training: backpropagation of derivatives through unfolded bidirectional graph. 
+\section{Long short-term memory (LSTM)}
+RNN difficult to train due to vanishing/exploding gradient. CH.4.7: large number of layers(L) $ \rightarrow $ long chain rule over layers \\
+RNN: large number of time recursions(B) $ \rightarrow $ long chain rule over time in addition\\
+Difficult choice of B: B $ \downarrow $ $ \rightarrow $ noisy gradient ; B $  \uparrow $ $ \rightarrow $ vanishing/exploding gradient\\
+Solution: LSTM\\
+\putfigure{1.0}{1}{0.4}{Images/LSTMCell}{LSTM cell overview}\\
+\putfigure{1.0}{1}{0.4}{Images/LSTMCell2}{LSTM cell diagramm}\\
+\putfigure{1.0}{1}{0.4}{Images/LSTMcell3}{Lstm mathematical description}   \\
+\textbf{Effects of gating:}\\
+0 < gate signal < 1 input/output gate \\
+\begin{tabular}{lll}
+	& input/output gate & forget gate \\
+	$ \approx 0  $& close gate & clear memory \\
+	$ \approx 1  $& open gate & keep memory 
+\end{tabular}\\
+Bidirectional LSTM-RNN also possible\\
+
+
+
+
+
+
+
+
+
+

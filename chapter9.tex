@@ -1,0 +1,38 @@
+\mainsection{9}{Unsupervised and generative models}{15/06/2020}
+\section{Autoencoder(AE)}
+a DNN to learn an efficient representation/coding of input data\\
+$ \x \rightarrow  \left[\begin{matrix}
+encoder, f_E , \\
+\underline{\Theta}_E
+\end{matrix} \right] \rightarrow \z \rightarrow \left[ \begin{matrix}
+decoder, f_D ,\\
+ \underline{\Theta}_D
+\end{matrix}\right] \rightarrow \hat{\x} \rightarrow \underset{\underset{\y = \x}{\uparrow} }{loss}$\\
+$  \x \in \R ^d  $ input \\
+$  \z = f_E (\x ; \underline{\Theta}_E) \in \R^c : $ latent variable / representation $  \equiv  $ a hidden code for $ \x  $\\
+ $ \hat{\x} = f_D (\z ; \underline{\Theta}_D )= f_D (F_E (\x ; \underline{\Theta}_E ) ; \underline{\Theta}_D )  = f(\x ; \Theta ) \in \R ^d  $ reconstruction for $  \x  $\\
+ $  \underline{\Theta} _E ,   \underline{\Theta} _D , = \underline{\Theta} = \left[ \begin{matrix}
+ \underline{\Theta} _E \\
+ \underline{\Theta} _D 
+ \end{matrix}  \right] : $ parameters \\
+ $  \y = \x:  $ self-copy, unsupervised ! \\
+\textbf{ Encoder /decoder:}\\
+\textbullet any NN \\
+\textbullet typically symmetric \\
+\textbf{Mostly undercomplete autoencoder:}: $ c << d  $\\
+\putfigure{1.0}{1}{0.4}{Images/UndercompleteAutoencoder}{Undercomplete Autoencoder} \\
+overcomplete autoencoder (c >> d) never used \\
+Applications of autoencoder:\\
+\textbullet a) Dimension reduction like PCA: c << d \\
+\textbullet b) Denoising autoencoder \\
+$ \x + generated noise / corruptions \rightarrow Autoencoder \rightarrow \hat{\x}\rightarrow \y = \x  $ : $ \rightarrow $ clean input \\
+reduce noise / corruption in input\\
+$  \z  $: low dimensional ( c<d) \\
+$ \rightarrow $ keep only relevant information for $ \x $ , drop noise/corruption information\\
+ c) reconstruction-based outlier/anomaly detection\\
+\textbullet AE trained on normal data $ \rightarrow  \hat{\x} \approx \x $ for normal data \\
+\textbullet if $  \x $ outlier:  $  || \hat{\x} - \x || $ large $ \rightarrow $ outlier can be detected \\
+ d) unsupervised preprocessing for other tasks\\
+ \textbullet automatic feature learning/extraction $  \z $ instead of manual feature extraction in conventional machine learning\\
+
+
