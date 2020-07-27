@@ -1,7 +1,7 @@
 \ProvidesClass{notes}[2019/05/26 My custom notes]
 \LoadClass[11pt, a5paper]{report}
-\usepackage{pgfpages}                                 % <— load the package
-\pgfpagesuselayout{2 on 1}[a4paper,landscape,border shrink=5mm] % <— set options
+% \usepackage{pgfpages}                                 % <ï¿½ load the package
+% \pgfpagesuselayout{2 on 1}[a4paper,landscape,border shrink=5mm] % <ï¿½ set options
 \usepackage[left=0.5cm,top=0.5cm,right=0.5cm,bottom=0.5cm]{geometry}
 \usepackage[ansinew]{inputenc}
 \usepackage[T1]{fontenc}
@@ -65,7 +65,7 @@
     \centering
         \includegraphics[width=#2\textwidth,height=#3\textheight]{#4}
         \captionof{figure}{#5}
-        
+
     \end{minipage}
 }
 
@@ -193,7 +193,7 @@
 % % \newcommand{\ZPTIME}{\mathrm{ZPTIME}}
 % % \newcommand{\BPTIME}{\mathrm{BPTIME}}
 % % \newcommand{\NTIME}{\mathrm{NTIME}}
-% 
+%
 % % values associated to optimization algorithm instances
 % \newcommand{\Opt}{{\mathsf{Opt}}}
 % \newcommand{\Alg}{{\mathsf{Alg}}}
