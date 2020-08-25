@@ -1,7 +1,8 @@
 \ProvidesClass{notes}[2019/05/26 My custom notes]
 \LoadClass[11pt, a5paper]{report}
-% \usepackage{pgfpages}                                 % <ï¿½ load the package
+\usepackage{pgfpages}                                 % <ï¿½ load the package
 % \pgfpagesuselayout{2 on 1}[a4paper,landscape,border shrink=5mm] % <ï¿½ set options
+\pgfpagesuselayout{2 on 1}[a4paper,landscape,border shrink=5mm] % <— set options
 \usepackage[left=0.5cm,top=0.5cm,right=0.5cm,bottom=0.5cm]{geometry}
 \usepackage[ansinew]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,7 +21,8 @@
 \usepackage{color}
 \usepackage{caption}
 \usepackage{titlesec}
-%\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdfpages}
 \usepackage{tocloft}
 \usepackage{adjustbox}
 \setlength{\parindent}{0em}

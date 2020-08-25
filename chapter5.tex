@@ -1,6 +1,9 @@
 
 \mainsection{5}{Advanced optimization techniques}{15/05/2020}
 \section{Difficulties in optimization }
+\includegraphics[page = 134, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={135-142}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 143, width = \paperwidth]{PDFs/DL-Slides.pdf}
 2 Questions:
 \textbullet universal approximation: Existence of a NN for each task\\
 Will you find it?\\
@@ -43,6 +46,9 @@ $  \phi' (a) = \left\lbrace \begin{array}{lc}
 \end{array} \right. = u(a) $ \\
 $\rightarrow$ ReLu less serious for vanishing gradient
 \section{Momentum method}
+\includegraphics[page = 144, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={145-146}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 147, width = \paperwidth]{PDFs/DL-Slides.pdf}
 an improvement of SGD \\
 \textbullet change from $  \underline{\theta}^t $ to $ \underline{\theta} ^{t+1}: \Delta \underline{\theta}^t =\beta \cdot \Delta \underline{\theta}^{t-1}  \underbrace{  - \gamma^t \underline{\nabla}   L(t; \underline{\theta}) |_{\underline{\theta} = \underline{\theta}^t}}_{\text{gradient part}} $\\
 \textbullet update: $  \underline{\theta}^{t+1} = \underline{\theta}^{t} + \delta \underline{\theta}^t $ \\
@@ -55,7 +61,9 @@ $  \beta > 0  $ : recursive smoothing of $  \Delta \underline{\theta}^t $  \\
 \subsection{Nesterov Momentum}
 a variant of momentum method \\
 $  \Delta \underline{\theta} ^{t} =\beta \Delta \underline{\theta}^{t-1} +  \underbrace{(- \gamma^t \underline{ \nabla} L(t; \underline{\theta})|_{ \underline{\theta} = \underline{\theta}^t + \beta \Delta \underline{\theta}^t)}}_{\text{lookahead gradient at the predicted position } \underline{\theta}^{t-1} + \beta \Delta \underline{\theta}} $ 
-\section{5.3 Learning rate schedule}
+\section{Learning rate schedule}
+\includegraphics[page = 148, scale=.6]{PDFs/DL-Slides.pdf}\\
+\includegraphics[page = 149, scale=.6]{PDFs/DL-Slides.pdf}\\
 How to choose the step size /learning rate $  \gamma^t $?\\
 Many possible schedules \\
 \textbf{S1 constant learning rate:}\\
@@ -74,6 +82,8 @@ $\rightarrow$ Need a trade-off between \\
 \textbullet $ \gamma^t  $ calculated dynamically depending on $ \underline{\theta}^t $ \\
 Slide 5-16 Adam very popular 
 \section{Input and batch normalization}
+\includegraphics[page = 150, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={151-154}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 \subsection{E5.3 A Perceptron}
 a) large offset : $  \x (n) = \underset{offset}{\x_0} + \tilde{\x} (n) , || \x _ 0 || >> \tilde{\x} (n) , \forall n  $\\
 $\rightarrow \underline{\underline{R}} \approx \x_0 \x_0^T ,$ rank one \\
@@ -116,6 +126,7 @@ $ \rightarrow $ slower convergence  \\
 \putfigure{1.0}{1}{0.45}{Images/SummaryBatchNormalization}{Summary BN} \\
 \putfigure{1.0}{1}{0.45}{Images/SummaryBatchNormalization2.png}{Summary BN 2} 
 \section{Parameter initialization}	
+\includegraphics[page = 155, width = \paperwidth]{PDFs/DL-Slides.pdf}
 SGD does a local search: The solution depends on the initial value $  \theta ^0 $ \\
 $  \Theta ^0 = ?? $
 \textbf{2 Random onotialization of $ \W_L $} , e.g.
@@ -146,6 +157,8 @@ const. gradient flow in backward pass \\
 $ ||  \dfrac{\partial L }{\partial \a_l}|| = const, \forall l$ $ \rightarrow  \sigma_{w,l} \sim \dfrac{1}{\sqrt{M_l}}, M_l:$ fan-out\\
 compromise: $  \sigma_{w,l} \sim \dfrac{1}{\sqrt{M_{l-1} + M_l}} $
 \section{Improved (network)-model}
+\includegraphics[page = 156, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={157-160}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 A) Better activation functions $  \phi(\cdot) $, e.g. \\
 \textbullet ReLU instead of sigmoid \\
 \textbullet leaky reLu instead of ReLU\\

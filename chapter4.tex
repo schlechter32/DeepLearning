@@ -1,5 +1,6 @@
 \mainsection{4}{Dense Neural Networks }{05/05/2020}
-
+\includegraphics[page = 99, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={100-101}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 A general model for $ q (\underline{y} | \underline{x} ; \Theta ) \\
 $
 *) can learn any linear or nonlinear mapping  \\
@@ -7,7 +8,7 @@ $
 artificial NN: mimic biological NN (brain)
 \section{Fully connected neural networks - Neuron}
 \putfigure{1.0}{1}{0.4}{Images/vlc_9n6oQpeN9Q}{Neuron}
-\section{Chapter 4.2 Layer of Nurons}
+\section{Layer of Nurons}
 \putfigure{1.0}{1}{0.4}{Images/vlc_AU8hElxhfe}{Layer of Neurons}\\
 2 meanings of $\phi ()$: \\
 \putfigure{1.0}{1}{0.4}{Images/vlc_sWrXTyRkHo}{Meanings of phi} \\
@@ -18,6 +19,8 @@ Comments : \\
 $\rightarrow$ $c \cdot d$ weights and $w_ {ij }$ an c biases $b_i$ , $1 \leq i \leq c, 1 \leq j \leq d$, \\
 $\rightarrow$ $ c \cdot (d+1)$ parameters
 \section{Feedforward neural network}
+\includegraphics[page = 102, width = \paperwidth]{PDFs/DL-Slides.pdf}\pagebreak
+\includegraphics[page = 103, width = \paperwidth]{PDFs/DL-Slides.pdf}
 A cascade of dense layers \\
 \textbf{Layer } $ 1 \leq l \leq L:$ \\
 $M_l -1 $ number of the input neurons \\
@@ -26,6 +29,9 @@ $M_l -1 $ number of the input neurons \\
 
 
 \section{Activation function}
+\includegraphics[page = 104, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={105-106}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 107, width = \paperwidth]{PDFs/DL-Slides.pdf}
 Mild requirements on $ \phi() $: \\
 \textbullet nonlinear in general $ \rightarrow $ fundamental \\
 \textbullet smooth, differentiable $ \rightarrow $ for training \\
@@ -89,6 +95,9 @@ $ \dfrac{ \partial \phi_i (\underline{a}) }{\partial a_j} = ... = \left\lbrace \
 \end{array} \right. $
 \textbullet 4-9 for details on usage \\
 \section{Universal approximation } 
+\includegraphics[page = 108, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={109-110}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 111, width = \paperwidth]{PDFs/DL-Slides.pdf}
 \includegraphics[width=\linewidth]{Images/Slide410.png}
 
 \subsection{E4.3 Regression with 1 hidden layer}
@@ -105,6 +114,9 @@ Picture is for black 1 $ w_i $ red another $ w_i $ green another example $ w_i $
 \putfigure{1.0}{1}{0.2}{Images/E43Sketchsigmoid}{Sketch for sigmoid} 
 %\includegraphics[width=\linewidth]{Images/E43Sketchsigmoid.png}
 \section{Loss and cost function}
+\includegraphics[page = 112, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={113-118}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 119, width = \paperwidth]{PDFs/DL-Slides.pdf}
 \textbf{Review chapter 3.4}	\\
 \putfigure{1.0}{1}{0.15}{Images/ProbabalisticFrameworkSupervisedLearning}{Probabalisitc Framework supervised learning} 
 %\includegraphics[width=\linewidth]{Images/ProbabalisticFrameworkSupervisedLearning.png}\\
@@ -174,6 +186,9 @@ $\rightarrow$ adapted definition of J and D are necessary \\
 %\includegraphics[width=\linewidth]{Images/SoftJaccardDiceLoss.png}\\
 \textbf{Very good for strongly imbalanced classes }
 \section{Training}
+\includegraphics[page = 120, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={121-126}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 127, width = \paperwidth]{PDFs/DL-Slides.pdf}
 \textbullet training set $ D_{train} = \lbrace \underline{x} , \underline{y } , 1 \leq n \leq N \rbrace $\\
 \textbullet cost function $ L(\underline{\theta}) = \dfrac{1}{N} \sum_{n=1}^{N} l(\underline{x}(n),\underline{y}; \underline{\theta}) $ \\
 \textbullet task: $ min L(\underline{\theta}) $\\
@@ -222,6 +237,9 @@ and objective performance metrics for classification \\
 \textbullet \textbf{test error rate :} Error rate of $ DNN( \hat{\underline{\theta}}_k) $ for $ D_{test} $\\
 or:
 \textbullet training/test accuracy =   1- training/test error rate 
-\section{4.8 Implementation of DNN's in Python}
+\section{Implementation of DNN's in Python}
+\includegraphics[page = 128, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={129-132}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 133, width = \paperwidth]{PDFs/DL-Slides.pdf}
 \textbullet $ 60000/ 128 ) 468,795 \approx 469 $ mini-batches (slide 4-33)\\
 \textbullet see python script KerasDemo

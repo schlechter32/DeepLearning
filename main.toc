@@ -1,0 +1,83 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{Doc-Start}%
+\contentsline {section}{\numberline {1.1}What is machine learning}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}What is deep learning?}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}What is a neural network (NN)}{14}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Examples for Deep Learning}{16}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Tools for Deep Learning}{26}{section.1.3}%
+\contentsline {section}{\numberline {2.1}Software}{26}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Hardware}{34}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Datasets}{36}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Machine learning basics}{40}{section.2.3}%
+\contentsline {section}{\numberline {3.1}Linear Algebra}{40}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Random variable and probability distribution}{44}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}One random vector}{52}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Multiple random vectors}{54}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Kernel based density estimation }{54}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Kullback-Leibler divergence and cross entropy }{56}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}E3.5 KLD between normal and Laplace distribution }{60}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Probabilistic framework for machine learning}{62}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Role of a NN }{68}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Dense Neural Networks }{68}{subsection.3.4.1}%
+\contentsline {section}{\numberline {4.1}Fully connected neural networks - Neuron}{70}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Layer of Nurons}{72}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Feedforward neural network}{72}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Activation function}{74}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Sigmoid activation function}{78}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}hyperbolic tangent activation function }{78}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}rectifier linear unit(ReLU}{80}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Softmax activatoin function(classification problem)}{80}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Special case c=2, binary classification problem}{80}{subsection.4.4.5}%
+\contentsline {section}{\numberline {4.5}Universal approximation }{82}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}E4.3 Regression with 1 hidden layer}{84}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Loss and cost function}{86}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Regression Problem}{90}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Classification}{92}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Semantic segmentation }{92}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Training}{94}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Chainrule of derivative (back propagation)}{100}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}Implementation of DNN's in Python}{102}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Advanced optimization techniques}{106}{section.4.8}%
+\contentsline {section}{\numberline {5.1}Difficulties in optimization }{106}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}E5.1: sigmoid vs. ReLU}{114}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Momentum method}{114}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Nesterov Momentum}{116}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Learning rate schedule}{118}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Input and batch normalization}{120}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}E5.3 A Perceptron}{122}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Batch normalization}{122}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Parameter initialization}{126}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Improved (network)-model}{128}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Overfitting and regularization}{132}{figure.5.8}%
+\contentsline {section}{\numberline {6.1}Model capacity and overfitting / underfitting}{132}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Weight norm penalty}{134}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Early stopping}{136}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Data augmentation}{136}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Ensamble learning}{138}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Dropout}{140}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Hyperparameter optimization}{146}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Convolutional neural networks (CNN)}{150}{figure.6.7}%
+\contentsline {section}{\numberline {7.1}Convlutional layer}{152}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Properties of convolutional layer}{156}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Modified convolutions}{158}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Pooling and unpooling layer}{164}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Deconvolutional layer}{166}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Flatten layer}{168}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Global average pooling layer}{168}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Architecture of CNNs}{168}{section.7.7}%
+\contentsline {chapter}{\numberline {8}Reccurent/recursive neural networks (RNN)}{176}{figure.7.5}%
+\contentsline {section}{\numberline {8.1}Recruent layer and recurrent neural network}{180}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Bididrectional recurrent neural network(BRNN)}{184}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Long short-term memory (LSTM)}{188}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Unsupervised and generative models}{194}{figure.8.6}%
+\contentsline {section}{\numberline {9.1}Autoencoder(AE)}{194}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Variational autoencoder}{200}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Generative adversarial network}{208}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Popular networks and modules}{218}{section.9.3}%
+\contentsline {section}{\numberline {10.1}For image classification}{220}{section.10.1}%
+\contentsline {section}{\numberline {10.2}For object detection}{228}{section.10.2}%
+\contentsline {section}{\numberline {10.3}For image segmentation}{232}{section.10.3}%
+\contentsline {section}{\numberline {10.4}For generative tasks}{234}{section.10.4}%
+\contentsline {chapter}{\numberline {11}Further topics and outlook}{236}{section.10.4}%
+\contentsline {section}{\numberline {11.1}Important but unaddressed topics}{236}{section.11.1}%
+\contentsline {section}{\numberline {11.2}For object detection}{244}{section.11.2}%
