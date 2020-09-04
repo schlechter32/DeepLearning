@@ -1,4 +1,5 @@
 \mainsection{7}{Convolutional neural networks (CNN)}{15/06/2020}
+\includegraphics[page = 181, width = \paperwidth]{PDFs/DL-Slides.pdf}
 ch. 4: dense networks \\
 \textbullet consisting of dense layers only \\
 \textbullet but rarely used. CNN widely used.\\
@@ -8,6 +9,8 @@ Solution: CNN, consisitng of many convolutional layers, based on convolution ope
 \textbullet good for local feature learning\\
 \textbullet more efficent, i.e. low complexity
 \section{Convlutional layer} 
+\includegraphics[page = 182, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={183-188}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 supports various datatypes:\\
 \begin{tabular}{lcc}
 input data type:  &$  \X_{l-1}, \A_l ; \X_l$ &$ \W_l$ \\
@@ -70,6 +73,8 @@ translation /shift of $  \X_{l-1} \rightarrow  $ same translation/shift of $ \X_
 $ \rightarrow $ need multiple channels/feature maps ($ D_l > 1  $) \\
 \textbullet p5) $  M_l = M_{l-1 }  - K_l + 1 :  $ images become smaller.
 \section{Modified convolutions}
+\includegraphics[page = 189, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={190-193}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 to:\\
 \textbullet reduce complexity \\
 \textbullet increase the receptive field\\
@@ -107,6 +112,9 @@ $  N_{x,3 } = MNK^2 \cdot 1 \cdot D_{l-1 } + MN \cdot 1^2 \cdot D_{l-1 } D_l  $\
 $  \dfrac{N_{x,3}}{N_{x,1} } = \dfrac{1}{D_l } \dfrac{1}{K_l^2} \approx \dfrac{1}{K_l^2}  $ for $  D_l >> K_l ^2 $\\
 \textbullet Comparison Slide 7-13
 \section{Pooling and unpooling layer}
+\includegraphics[page = 194, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\pagebreak
+\includegraphics[page = 195, width = \paperwidth]{PDFs/DL-Slides.pdf}
 2D \textbf{pooling layer} with  stride $  s \in \N $\\
 \putfigure{1.0}{1}{0.4}{Images/PoolingLayerVisu}{pooling layer visualization}\\
 \textbullet max pooling: $ p = max() $ of a,b,c,...\\
@@ -125,6 +133,8 @@ $ a \rightarrow \left[
 \right] $\\
 upsampling to restore the original image after size pooling
 \section{Deconvolutional layer}
+\includegraphics[page = 196, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={197-198}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 deconvolutional layer  $  \neq $ deconvolution, bad name \\
 other names= fractionally strided convolution or transposed convolution or learnable upsample\\
 \textbf{Goals:}\\
@@ -164,6 +174,8 @@ $  \X = [x_{ij}] \in \R^{M \times N \times D} \rightarrow GAP \rightarrow \left[
 \textbullet much less coefficients/parameters for the dense layer after the GAP layer\\
 \textbullet suitable for large DNN: reduce complexity
 \section{Architecture of CNNs}
+\includegraphics[page = 199, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={200-211}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 A CNN consists of typically \\
 \textbullet convolutional layers \\
 \textbullet optional max pooling layers \\

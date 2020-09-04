@@ -1,7 +1,11 @@
 \mainsection{6}{Overfitting and regularization}{25/05/2020}
 \section{Model capacity and overfitting / underfitting}
+\includegraphics[page = 161, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={162-163}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 164, width = \paperwidth]{PDFs/DL-Slides.pdf}
 \putfigure{1.0}{1}{0.4}{Images/ModelFitting}{Model fitting curve}
 \section{Weight norm penalty}
+\includegraphics[page = 165, width = \paperwidth]{PDFs/DL-Slides.pdf}
 change on cost function: \\
 \textbullet old cost function: $ L(\underline{\theta}) $\\
 \textbullet New regularized cost function: $ L_r (\underline{\theta}) = L /\underline{\theta}  + \sum_{l=1}^{L} \lambda_i P(\W_L)$ \\
@@ -25,19 +29,28 @@ $ \underline{\theta}^{t+1} = \underline{\theta}^t - \gamma^t \underline{\nabla }
 $  P(\W_L) = || vec (\W_L) ||_1 = \sum_i \sum_j | W_{L,ij} | \\
 \rightarrow  $ prefer sparse $ \W_L $ with many zero elements\\
 \section{Early stopping}
+\includegraphics[page = 166, width = \paperwidth]{PDFs/DL-Slides.pdf}
 change on optimizer:\\
 \putfigure{1.0}{1}{0.2}{Images/StopTraining}{Early stopping} 
 \section{Data augmentation} 
+\includegraphics[page = 167, width = \paperwidth]{PDFs/DL-Slides.pdf}
 change on dataset, training with $ \infty $ many training data $\rightarrow$ no over fitting, in practice, training set is limited in size\\
 \textbf{data augmentation:} Generation of artificial realistic training samples: 
 \section{Ensamble learning}
+\includegraphics[page = 168, width = \paperwidth]{PDFs/DL-Slides.pdf}
 change dataset / model / cost function /  optimizer\\
 \putfigure{1.0}{1}{0.4}{Images/EnsembleLearning}{Ensamble learning explained} 
 \section{Dropout}
+\includegraphics[page = 169, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={170-175}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 176, width = \paperwidth]{PDFs/DL-Slides.pdf}
 change on model \\
 An implicit ensemble method\\
 \putfigure{1.0}{1}{0.4}{Images/DropOut}{Dropout explained} 
 \section{Hyperparameter optimization}
+\includegraphics[page = 177, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={178-179}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 180, width = \paperwidth]{PDFs/DL-Slides.pdf}
 \putfigure{1.0}{1}{0.4}{Images/HyperParametersExplained}{Hyperparameters explained} \\
 Solution for b): Use validation data set D\\
 up to now separating dataset in 2 for training and test, but now split in three parts training set $ D_{train} $ (large). test set $ D_{test} $(small) and validation set $ D_{val} $ (small, same size as test)\\

@@ -1,7 +1,12 @@
 \mainsection{8}{Reccurent/recursive neural networks (RNN)}{15/06/2020}
+\includegraphics[page = 212, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={213-214}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 215, width = \paperwidth]{PDFs/DL-Slides.pdf}
 NN with feedback.\\
 Dense network(ch. 4) and CNN(ch. 7): feedforward
 \section{Recruent layer and recurrent neural network}
+\includegraphics[page = 216, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={217-222}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 \textbf{Recurrent layer: }l: $ M_l $ recurrent neurons\\
 $x_{l-1} (n) \rightarrow  \left[\begin{matrix}
 \W_{l,x }\\
@@ -36,10 +41,15 @@ $  \equiv $ chain rule and product rule of derivative \\
 $  \dfrac{\partial (f (\theta ) \cdot g (\theta))}{\partial \theta } $\\
 \textbullet Slide 8-10 $  \W_2 $ is wrong before loss
 \section{Bididrectional recurrent neural network(BRNN)}
+\includegraphics[page = 223, scale=.6]{PDFs/DL-Slides.pdf}\newline\newpage
+\includegraphics[page = 224, width=\paperwidth]{PDFs/DL-Slides.pdf}\\
 \putfigure{1.0}{1}{0.4}{Images/GraphBRnn}{Graph BRNN} \\
 \putfigure{1.0}{1}{0.4}{Images/UnfoldedGraphBRNN}{Unfolded graph BRNN} \\
 Training: backpropagation of derivatives through unfolded bidirectional graph. 
 \section{Long short-term memory (LSTM)}
+\includegraphics[page = 225, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={226-231}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 232, width = \paperwidth]{PDFs/DL-Slides.pdf}
 RNN difficult to train due to vanishing/exploding gradient. CH.4.7: large number of layers(L) $ \rightarrow $ long chain rule over layers \\
 RNN: large number of time recursions(B) $ \rightarrow $ long chain rule over time in addition\\
 Difficult choice of B: B $ \downarrow $ $ \rightarrow $ noisy gradient ; B $  \uparrow $ $ \rightarrow $ vanishing/exploding gradient\\

@@ -1,5 +1,7 @@
 \mainsection{9}{Unsupervised and generative models}{15/06/2020}
 \section{Autoencoder(AE)}
+\includegraphics[page = 233, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={234-241}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
 a DNN to learn an efficient representation/coding of input data\\
 $ \x \rightarrow  \left[\begin{matrix}
 encoder, f_E , \\
@@ -19,7 +21,7 @@ $  \z = f_E (\x ; \underline{\Theta}_E) \in \R^c : $ latent variable / represent
 \textbf{ Encoder /decoder:}\\
 \textbullet any NN \\
 \textbullet typically symmetric \\
-\textbf{Mostly under-complete auto-encode:}: $ c << d  $\\
+\textbf{Mostly undercomplete autoencoder:}: $ c << d  $\\
 \putfigure{1.0}{1}{0.4}{Images/UndercompleteAutoencoder}{Undercomplete Autoencoder} \\
 overcomplete autoencoder (c >> d) never used \\
 Applications of autoencoder:\\
@@ -33,25 +35,28 @@ $ \rightarrow $ keep only relevant information for $ \x $ , drop noise/corruptio
 \textbullet AE trained on normal data $ \rightarrow  \hat{\x} \approx \x $ for normal data \\
 \textbullet if $  \x $ outlier:  $  || \hat{\x} - \x || $ large $ \rightarrow $ outlier can be detected \\
  d) unsupervised preprocessing for other tasks\\
- \textbullet automatic feature learning/extraction $  \z $ instead of manual feature extraction in conventional machine learning
-\section{Variational Autoencoder}
-Theory of variational autoencoder (VAE):
-$ p(\x):  $ unknown distribution of $ \X $,\\
-Onlz samples $ \x(1),.., \xi(N) $ available\\
-$ q(\xi; \underline{\theta} $: parametric model for $ p(\x) $\\
-$ \underline{\theta}: $ parameters of VAE\\
-Goal: $ \underset{\underline{\theta}}{min} D_{KL} (p|| q) $\\
-As in ch.3.4: 
-cost function $ L(\underline{\theta}) = D_{KL} (|| q) = E _{\x \sim p} ln( \dfrac  {p(\X)}  {q(\x ;\underline{\theta})  }) =
-\underbrace{E_{\x \sim p} ln(p(\X))}_{\text{independent of } \underline{\theta}}- E_{\x \sim p(\text{unknown) }} ln(q(\x
-;\underline{\theta}))$\\
-Replace $ p(\x)  $ bz $ \hat{p}(\x)  = \dfrac{1}{N} \sum_{n=1}^{N} \delta (\c - \x_n)$\\
-$ \rightarrow L(\underline{\theta}) \approx const - E_{\x \sim p} ln (q(\x ; \underline{\theta})) = const. = \dfrac{1}{N} \sum_{n=1}^{N} - \underbrace{ln (q(\x (n) ; \underline{\theta}) )}_{\text{loss } l(\x_n(n) ; \underline{\theta}) \text{ of VAE}}$\\
-Difference to supervised learning in ch. 3.4 and ch. 4\\
-\textbullet NO $ \y $ \\
-\textbullet $ p(\x ,\y) $ $ \rightarrow  p(\x)$\\
-$ q(\y | \x ; \underline{\theta}) $ $ \rightarrow $ $ q(\x_n; \underline{\theta}) $\\
-Ho to model $ q(\x_n; \underline{\theta}) $?\\
-VAE: $ \x $ generated bz $ \z $ with a known distribution \\
-$ \z \sim q(\z) ,  $ e.g. $ \z \sim N(\underline{0}, \I) $\\
-$ \underline{\mu}\\  $
+ \textbullet automatic feature learning/extraction $  \z $ instead of manual feature extraction in conventional machine learning\\
+
+
+\section{Variational autoencoder}
+\includegraphics[page = 242, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={243-244}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 245, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={246-247}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 248, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includegraphics[page = 249, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={250-251}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 252, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\section{Generative adversarial network}
+\includegraphics[page = 253, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\newpage
+\includegraphics[page = 254, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includegraphics[page = 255, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={256-257}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 258, width = \paperwidth]{PDFs/DL-Slides.pdf}
+
+\includepdf[pages={259-260}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
+\includegraphics[page = 261, width = \paperwidth]{PDFs/DL-Slides.pdf}
+
+\includegraphics[page = 262, width = \paperwidth]{PDFs/DL-Slides.pdf}
+\includepdf[pages={263-264}, scale = 1,nup = 1x2 ]{PDFs/DL-Slides}
