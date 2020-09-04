@@ -19,7 +19,7 @@ $  \z = f_E (\x ; \underline{\Theta}_E) \in \R^c : $ latent variable / represent
 \textbf{ Encoder /decoder:}\\
 \textbullet any NN \\
 \textbullet typically symmetric \\
-\textbf{Mostly undercomplete autoencoder:}: $ c << d  $\\
+\textbf{Mostly under-complete auto-encode:}: $ c << d  $\\
 \putfigure{1.0}{1}{0.4}{Images/UndercompleteAutoencoder}{Undercomplete Autoencoder} \\
 overcomplete autoencoder (c >> d) never used \\
 Applications of autoencoder:\\
@@ -33,6 +33,25 @@ $ \rightarrow $ keep only relevant information for $ \x $ , drop noise/corruptio
 \textbullet AE trained on normal data $ \rightarrow  \hat{\x} \approx \x $ for normal data \\
 \textbullet if $  \x $ outlier:  $  || \hat{\x} - \x || $ large $ \rightarrow $ outlier can be detected \\
  d) unsupervised preprocessing for other tasks\\
- \textbullet automatic feature learning/extraction $  \z $ instead of manual feature extraction in conventional machine learning\\
-
-
+ \textbullet automatic feature learning/extraction $  \z $ instead of manual feature extraction in conventional machine learning
+\section{Variational Autoencoder}
+Theory of variational autoencoder (VAE):
+$ p(\x):  $ unknown distribution of $ \X $,\\
+Onlz samples $ \x(1),.., \xi(N) $ available\\
+$ q(\xi; \underline{\theta} $: parametric model for $ p(\x) $\\
+$ \underline{\theta}: $ parameters of VAE\\
+Goal: $ \underset{\underline{\theta}}{min} D_{KL} (p|| q) $\\
+As in ch.3.4: 
+cost function $ L(\underline{\theta}) = D_{KL} (|| q) = E _{\x \sim p} ln( \dfrac  {p(\X)}  {q(\x ;\underline{\theta})  }) =
+\underbrace{E_{\x \sim p} ln(p(\X))}_{\text{independent of } \underline{\theta}}- E_{\x \sim p(\text{unknown) }} ln(q(\x
+;\underline{\theta}))$\\
+Replace $ p(\x)  $ bz $ \hat{p}(\x)  = \dfrac{1}{N} \sum_{n=1}^{N} \delta (\c - \x_n)$\\
+$ \rightarrow L(\underline{\theta}) \approx const - E_{\x \sim p} ln (q(\x ; \underline{\theta})) = const. = \dfrac{1}{N} \sum_{n=1}^{N} - \underbrace{ln (q(\x (n) ; \underline{\theta}) )}_{\text{loss } l(\x_n(n) ; \underline{\theta}) \text{ of VAE}}$\\
+Difference to supervised learning in ch. 3.4 and ch. 4\\
+\textbullet NO $ \y $ \\
+\textbullet $ p(\x ,\y) $ $ \rightarrow  p(\x)$\\
+$ q(\y | \x ; \underline{\theta}) $ $ \rightarrow $ $ q(\x_n; \underline{\theta}) $\\
+Ho to model $ q(\x_n; \underline{\theta}) $?\\
+VAE: $ \x $ generated bz $ \z $ with a known distribution \\
+$ \z \sim q(\z) ,  $ e.g. $ \z \sim N(\underline{0}, \I) $\\
+$ \underline{\mu}\\  $

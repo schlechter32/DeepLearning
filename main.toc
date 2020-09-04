@@ -71,3 +71,4 @@
 \contentsline {section}{\numberline {8.3}Long short-term memory (LSTM)}{62}%
 \contentsline {chapter}{\numberline {9}Unsupervised and generative models}{64}%
 \contentsline {section}{\numberline {9.1}Autoencoder(AE)}{64}%
+\contentsline {section}{\numberline {9.2}Variational Autoencoder}{66}%

@@ -1,0 +1,4 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Introduction}{2}%
+\contentsline {chapter}{\numberline {2}Tools for Deep Learning}{2}%
+\contentsline {chapter}{\numberline {3}Machine Learnin Basics}{2}%

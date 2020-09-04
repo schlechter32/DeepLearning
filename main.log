@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  15 JUN 2020 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  25 JUN 2020 11:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -1622,29 +1622,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--37
 
  []
 
+)
+Overfull \hbox (94.025pt too wide) in paragraph at lines 38--27
+\T1/ptm/m/n/10.95 As in ch.3.4: cost func-ti-on $\OML/cmm/m/it/10.95 L\OT1/cmr/
+m/n/10.95 ([]) = \OML/cmm/m/it/10.95 D[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95
+ jj\OML/cmm/m/it/10.95 q\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 E[]ln\OT1/cm
+r/m/n/10.95 ([]) = [] \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 E[]ln\OT1/cmr/m/
+n/10.95 (\OML/cmm/m/it/10.95 q\OT1/cmr/m/n/10.95 ([]; []))$ 
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--37
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--27
 
  []
 
-) [64
+[64
 
 
  <./Images/UndercompleteAutoencoder.png>]
 \openout2 = `IntroductionToTensofFlow.aux'.
 
  (IntroductionToTensofFlow.tex
-[66
-
-
-]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-) [68] (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux)
-(chapter5.aux) (chapter6.aux) (chapter7.aux) (chapter8.aux) (chapter9.aux)
-(IntroductionToTensofFlow.aux)) ) 
+) [68
+
+
+] [69] (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux)
+(chapter4.aux) (chapter5.aux) (chapter6.aux) (chapter7.aux) (chapter8.aux)
+(chapter9.aux) (IntroductionToTensofFlow.aux)) ) 
 Here is how much of TeX's memory you used:
  16453 strings out of 480811
  301532 string characters out of 2891958
@@ -1652,32 +1661,32 @@ Here is how much of TeX's memory you used:
  31960 multiletter control sequences out of 15000+200000
  564204 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,86p,962b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Nicolas Hornek/AppData/Local/Program
-s/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Nicolas Hornek/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Nicola
-s Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi6.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Nicolas Hornek/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
-Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr6.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Nicolas Hornek/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Us
-ers/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nicolas Hornek/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/
-Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
-mbols/msbm7.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Nicolas Hornek/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (35 pages, 8899268 bytes).
+ 60i,13n,86p,962b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Nicolas Hornek/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Nicolas Horne
+k/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Nicolas Hornek/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Nicola
+s Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Nicolas Hornek/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ni
+colas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy6.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nicolas Horn
+ek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/symbols/msbm7.pfb><C:/Users/Nicolas Hornek/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Nicolas Hornek/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Nicolas Horn
+ek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (36 pages, 8903436 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
+ 304 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  308 words of extra memory for PDF output out of 10000 (max. 10000000)
 
